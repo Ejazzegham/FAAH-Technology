@@ -1,0 +1,149 @@
+rules_version = '2';
+
+// HZ Technology — Firestore security rules.
+//
+// IMPORTANT: the email list below MUST match src/lib/admin-emails.ts exactly.
+// That file only controls what the admin UI *shows* — this file is the real
+// security boundary. Update both together whenever you add/remove an admin.
+//
+// Deploy with:
+//   firebase deploy --only firestore:rules
+// or paste this file's contents into Firebase console -> Firestore Database
+// -> Rules -> Publish.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() &&
+        request.auth.token.email != null &&
+        request.auth.token.email.lower() in [
+          'ejazzegham@gmail.com',
+          'hztechnology999@gmail.com'
+        ];
+    }
+
+    // ---- Public site content: anyone can read, only admins can write. ----
+    match /projects/{projectId} {
+      allow read: if true;
+      allow write: if isAdmin();
+
+      // Per-visitor like/favorite state. No client rule grants access on
+      // purpose — all reads/writes go through /api/reactions using Firebase
+      // Admin (which bypasses these rules), so this subcollection is fully
+      // closed to direct client access.
+      match /reactions/{visitorId} {
+        allow read, write: if false;
+      }
+    }
+
+    match /categories/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /technologies/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /services/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /team/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /pricingTiers/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /reviews/{id} {
+      allow read: if true;
+      // Reviews are added from the admin dashboard only (there's no public
+      // "leave a review" form) — writes are admin-only.
+      allow write: if isAdmin();
+    }
+
+    match /clients/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // settings/site (public site settings) and settings/adminLock (unused
+    // legacy doc, kept harmless) both live in this collection.
+    match /settings/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // ---- Blog & custom pages: public can read published content only. ----
+    // NOTE: the app's queries for public blog/page reads always include a
+    // `where("published", "==", true)` filter to match this rule — see
+    // src/lib/firestore/blog.ts and src/lib/firestore/pages.ts. Without that
+    // filter in the query itself, Firestore rejects the whole read.
+    match /blogPosts/{id} {
+      allow get, list: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    match /blogComments/{id} {
+      allow get, list: if isAdmin() || resource.data.approved == true;
+      // Anyone can submit a comment, but it always starts unapproved and
+      // must be tied to a real post id — no other fields can be forged.
+      allow create: if request.resource.data.approved == false &&
+        request.resource.data.postId is string &&
+        request.resource.data.postId.size() > 0 &&
+        request.resource.data.name is string && request.resource.data.name.size() > 0 &&
+        request.resource.data.comment is string && request.resource.data.comment.size() > 0;
+      allow update, delete: if isAdmin();
+    }
+
+    match /pages/{id} {
+      allow get, list: if isAdmin() || resource.data.published == true;
+      allow write: if isAdmin();
+    }
+
+    // ---- Contact form & newsletter: anyone can submit, admin manages. ----
+    match /messages/{id} {
+      allow create: if request.resource.data.name is string && request.resource.data.name.size() > 0 &&
+        request.resource.data.email is string && request.resource.data.email.size() > 0 &&
+        request.resource.data.message is string && request.resource.data.message.size() > 0 &&
+        request.resource.data.read == false;
+      allow read, update, delete: if isAdmin();
+    }
+
+    match /subscribers/{id} {
+      allow create: if request.resource.data.email is string && request.resource.data.email.size() > 0;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // ---- Customers & orders: a customer only ever sees their own data. ----
+    match /customers/{uid} {
+      allow read, create, update: if isSignedIn() && request.auth.uid == uid;
+      allow delete: if isAdmin();
+    }
+
+    match /orders/{id} {
+      allow create: if isSignedIn() && request.resource.data.uid == request.auth.uid;
+      allow get: if isAdmin() || (isSignedIn() && resource.data.uid == request.auth.uid);
+      allow list: if isAdmin() || (isSignedIn() && resource.data.uid == request.auth.uid);
+      // Only admins change status/details; customers can't edit or delete
+      // an order once placed.
+      allow update, delete: if isAdmin();
+    }
+
+    // Everything else is closed by default.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

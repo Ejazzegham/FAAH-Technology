@@ -1,0 +1,364 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Animatable custom property that drives every running RGB border on the
+   site — one shared angle keeps all borders in sync. */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+@keyframes rgb-border-spin {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+body {
+  background-color: #0a0a0d;
+  color: #f3f2ee;
+}
+
+@layer components {
+  .section {
+    @apply mx-auto max-w-7xl px-6 py-20 lg:px-10;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold text-bg transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-gold;
+    border: 2px solid transparent;
+    background-image: linear-gradient(135deg, #f0c878 0%, #d4a24e 45%, #a8792f 100%),
+      linear-gradient(135deg, #f0c878 0%, #d4a24e 45%, #a8792f 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  .btn-primary:hover {
+    background-image: linear-gradient(135deg, #f5d596 0%, #e8c27a 45%, #c49048 100%),
+      linear-gradient(135deg, #f5d596 0%, #e8c27a 45%, #c49048 100%);
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold text-gold transition-colors duration-200 hover:text-bg;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#0a0a0d, #0a0a0d),
+      linear-gradient(rgba(212, 162, 78, 0.6), rgba(212, 162, 78, 0.6));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  .btn-outline:hover {
+    background-image: linear-gradient(#d4a24e, #d4a24e),
+      linear-gradient(#d4a24e, #d4a24e);
+  }
+  .card {
+    @apply rounded-xl p-8 transition-all duration-300 hover:-translate-y-1;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#131318, #131318), linear-gradient(#232329, #232329);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  .card:hover {
+    background-image: linear-gradient(#131318, #131318),
+      conic-gradient(from var(--border-angle), #ff3b3b, #ffe94f, #4dff6a, #4d9fff, #c14dff, #ff3b3b);
+    animation: rgb-border-spin 3s linear infinite;
+  }
+  /* Generic reusable RGB border, for one-off boxes that aren't .card or a
+     button (image frames, stat boxes, project thumbnails). Set --box-fill
+     to match the surface it sits on before using it. Border only lights
+     up and starts spinning on hover/focus. */
+  .rgb-box {
+    --box-fill: #131318;
+    border: 2px solid transparent;
+    background-image: linear-gradient(var(--box-fill), var(--box-fill)),
+      linear-gradient(#232329, #232329);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: background-image 0.15s linear;
+  }
+  .rgb-box:hover,
+  .rgb-box:focus-within {
+    background-image: linear-gradient(var(--box-fill), var(--box-fill)),
+      conic-gradient(from var(--border-angle), #ff3b3b, #ffe94f, #4dff6a, #4d9fff, #c14dff, #ff3b3b);
+    animation: rgb-border-spin 3s linear infinite;
+  }
+}
+
+/* Fade/slide used when the login screen switches between sign in, sign up,
+   and forgot-password panels. */
+@keyframes auth-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.auth-fade-in {
+  animation: auth-fade-in 0.45s ease both;
+}
+
+/* Hides the scrollbar visually while keeping the element fully scrollable
+   (mouse wheel, trackpad, touch, and keyboard scrolling all still work). */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* RGB border on portfolio cards — only lights up and spins on hover. */
+.glow-card {
+  position: relative;
+  border-radius: 18px;
+  isolation: isolate;
+}
+
+.glow-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--border-angle),
+    #ff3b3b,
+    #ffe94f,
+    #4dff6a,
+    #4d9fff,
+    #c14dff,
+    #ff3b3b
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  animation: rgb-border-spin 3s linear infinite;
+  animation-play-state: paused;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.glow-card:hover::before,
+.glow-card:focus-within::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.glow-card:hover,
+.glow-card:focus-within {
+  box-shadow: 0 0 32px -6px rgba(255, 255, 255, 0.35);
+}
+
+.glow-card-inner {
+  position: relative;
+  z-index: 1;
+  margin: 2px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #131318;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-card::before {
+    animation: none;
+  }
+}
+
+/* Portfolio project image cards — same spinning RGB hover border as
+   .glow-card, but with a diagonal-corner shape instead of uniform
+   rounding: square top-left & bottom-right, 12px rounded top-right &
+   bottom-left. Used only for portfolio project cards (the grid on
+   /portfolio and the image gallery on a project's detail page) — every
+   other card style on the site (blog, services, etc.) is unaffected. */
+.portfolio-card {
+  position: relative;
+  border-radius: 0 12px;
+  isolation: isolate;
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--border-angle),
+    #ff3b3b,
+    #ffe94f,
+    #4dff6a,
+    #4d9fff,
+    #c14dff,
+    #ff3b3b
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  animation: rgb-border-spin 3s linear infinite;
+  animation-play-state: paused;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.portfolio-card:hover::before,
+.portfolio-card:focus-within::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus-within {
+  box-shadow: 0 0 32px -6px rgba(255, 255, 255, 0.35);
+}
+
+.portfolio-card-inner {
+  position: relative;
+  z-index: 1;
+  margin: 2px;
+  border-radius: 0 10px;
+  overflow: hidden;
+  background: #131318;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-card::before {
+    animation: none;
+  }
+}
+
+/* Animated RGB gradient headline text — flows continuously and blooms
+   into a soft multicolor glow on hover/focus (e.g. the About hero title).
+   overflow: visible + the small bottom padding keep descenders (g, p, y)
+   from getting clipped against the inline-block's box at large heading
+   sizes — background-clip: text on an inline-block can crop a glyph's
+   descender right at the box edge otherwise. */
+.rgb-text {
+  display: inline-block;
+  overflow: visible;
+  padding-bottom: 0.12em;
+  background-image: linear-gradient(
+    90deg,
+    #ff3b3b,
+    #ffe94f,
+    #4dff6a,
+    #4d9fff,
+    #c14dff,
+    #ff3b3b
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rgb-text-flow 7s linear infinite;
+  transition: filter 0.4s ease;
+  cursor: default;
+}
+.rgb-text:hover,
+.rgb-text:focus-visible {
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.45))
+    drop-shadow(0 0 34px rgba(212, 162, 78, 0.45))
+    drop-shadow(0 0 58px rgba(193, 77, 255, 0.25));
+}
+
+@keyframes rgb-text-flow {
+  to {
+    background-position: -300% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rgb-text {
+    animation: none;
+  }
+}
+
+/* Subtle RGB frame around the fullscreen portfolio lightbox image. */
+.lightbox-frame {
+  --box-fill: #0a0a0d;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background-image: linear-gradient(var(--box-fill), var(--box-fill)),
+    conic-gradient(from var(--border-angle), #ff3b3b, #ffe94f, #4dff6a, #4d9fff, #c14dff, #ff3b3b);
+  animation: rgb-border-spin 4s linear infinite;
+}
+
+/* Mobile navigation drawer (Navbar) — dark overlay + slide-in panel from
+   the right, with each link fading/sliding in with a short stagger. */
+@keyframes mobile-nav-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mobile-nav-panel-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes mobile-nav-item-in {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.mobile-nav-overlay {
+  animation: mobile-nav-overlay-in 0.25s ease both;
+}
+.mobile-nav-panel {
+  animation: mobile-nav-panel-in 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.mobile-nav-item {
+  animation: mobile-nav-item-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.timeline-line {
+  background: linear-gradient(
+    180deg,
+    rgba(212, 162, 78, 0) 0%,
+    rgba(212, 162, 78, 0.55) 8%,
+    rgba(212, 162, 78, 0.55) 92%,
+    rgba(212, 162, 78, 0) 100%
+  );
+}
+@media (min-width: 1024px) {
+  .timeline-line {
+    background: linear-gradient(
+      90deg,
+      rgba(212, 162, 78, 0) 0%,
+      rgba(212, 162, 78, 0.55) 6%,
+      rgba(212, 162, 78, 0.55) 94%,
+      rgba(212, 162, 78, 0) 100%
+    );
+  }
+}

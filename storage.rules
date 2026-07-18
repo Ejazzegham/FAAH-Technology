@@ -1,0 +1,26 @@
+rules_version = '2';
+
+// HZ Technology — Firebase Storage security rules.
+//
+// This app no longer uses Firebase Storage. File uploads (portfolio images,
+// blog covers, logo, etc.) go straight to Cloudflare R2 via presigned URLs —
+// see src/lib/r2.ts and src/lib/storage.ts. Firestore and Firebase Auth are
+// still used; Storage is not.
+//
+// This file exists purely as a safety net: if your Firebase project still
+// has a Storage bucket provisioned (created by default when the project was
+// set up), this locks it down completely so it can't be left wide open in
+// "test mode." Nothing in the app reads or writes through this bucket, so
+// denying everything here has no effect on site functionality.
+//
+// Deploy with:
+//   firebase deploy --only storage
+// or paste into Firebase console -> Storage -> Rules -> Publish.
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
