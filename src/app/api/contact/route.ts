@@ -49,11 +49,11 @@ export async function POST(req: NextRequest) {
     });
 
     await transporter.sendMail({
-      from: `"HZ Technology Website" <${emailUser}>`,
+      from: `"FAAH Technology Website" <${emailUser}>`,
       to: TO_EMAIL,
       replyTo: email,
       subject: `New website inquiry: ${subject || "No subject"}`,
-      text: `You have a new message from the HZ Technology contact form.
+      text: `You have a new message from the FAAH Technology contact form.
 
 Name: ${name}
 Email: ${email}

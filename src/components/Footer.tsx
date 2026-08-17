@@ -65,13 +65,13 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <Image
               src={settings.appearance.logoUrl}
-              alt="HZ Technology"
+              alt="FAAH Technology"
               width={36}
               height={36}
               className="h-9 w-9 object-contain"
             />
             <span className="font-display text-sm font-semibold text-white">
-              HZ TECHNOLOGY
+              FAAH TECHNOLOGY
             </span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
@@ -165,7 +165,7 @@ export default function Footer() {
 
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-xs text-muted sm:flex-row lg:px-10">
-          <p>© {new Date().getFullYear()} HZ Technology. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} FAAH Technology. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-gold">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-gold">Terms of Service</Link>

@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// HZ Technology — Firebase Storage security rules.
+// FAAH Technology — Firebase Storage security rules.
 //
 // This app no longer uses Firebase Storage. File uploads (portfolio images,
 // blog covers, logo, etc.) go straight to Cloudflare R2 via presigned URLs —

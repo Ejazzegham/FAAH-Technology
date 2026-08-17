@@ -48,7 +48,7 @@ export default function BlogAbout() {
 
           <div className="mt-6 flex flex-1 flex-col justify-between gap-4 text-base leading-relaxed text-muted">
             <p>
-              The HZ Technology Blog is a dedicated platform created to share
+              The FAAH Technology Blog is a dedicated platform created to share
               valuable knowledge, industry insights, and practical resources
               for businesses, entrepreneurs, designers, developers, and
               technology enthusiasts. Our mission is to simplify complex
@@ -69,7 +69,7 @@ export default function BlogAbout() {
               our content is designed to provide real value.
             </p>
             <p>
-              At HZ Technology, we believe that continuous learning is the
+              At FAAH Technology, we believe that continuous learning is the
               foundation of innovation and growth. That&apos;s why every
               article is carefully researched, professionally written, and
               focused on delivering clear, practical, and easy-to-understand
@@ -80,7 +80,7 @@ export default function BlogAbout() {
             </p>
             <p>
               From beginners seeking guidance to experienced professionals
-              looking for advanced strategies, the HZ Technology Blog serves
+              looking for advanced strategies, the FAAH Technology Blog serves
               as a trusted resource for staying ahead of industry trends,
               discovering new opportunities, and building a stronger future
               through technology.

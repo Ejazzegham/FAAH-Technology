@@ -8,9 +8,9 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — HZ Technology",
+  title: "About — FAAH Technology",
   description:
-    "Learn about HZ Technology — a creative digital agency and software development studio helping businesses grow with innovative design and robust technology.",
+    "Learn about FAAH Technology — a creative digital agency and software development studio helping businesses grow with innovative design and robust technology.",
   alternates: { canonical: "/about" },
 };
 

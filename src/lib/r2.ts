@@ -17,11 +17,11 @@ dns.setDefaultResultOrder("ipv4first");
 //   R2_ACCOUNT_ID          Cloudflare account ID (dashboard URL or R2 > Overview)
 //   R2_ACCESS_KEY_ID       from an R2 API token (R2 > Manage API Tokens)
 //   R2_SECRET_ACCESS_KEY   from the same R2 API token
-//   R2_BUCKET_NAME         the bucket you created, e.g. "hz-technology-uploads"
+//   R2_BUCKET_NAME         the bucket you created, e.g. "faah-technology-uploads"
 //   R2_PUBLIC_URL          public base URL for the bucket — either the custom
 //                          domain you attach to it (recommended) or the
 //                          default r2.dev URL, no trailing slash, e.g.
-//                          "https://files.hztechnology.com"
+//                          "https://files.faahtechnology.com"
 
 let _client: S3Client | null = null;
 

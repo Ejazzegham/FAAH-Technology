@@ -248,22 +248,22 @@ export default function AuthScreen() {
             />
             <div key={mode} className="auth-fade-in relative mx-auto max-w-sm text-center">
               <Image
-                src="/logo/hz_logo_1024x1024.png"
-                alt="HZ Technology"
+                src="/logo/faah_logo_1024x1024.png"
+                alt="FAAH Technology"
                 width={220}
                 height={220}
                 className="mx-auto w-44 drop-shadow-[0_0_60px_rgba(212,162,78,0.35)]"
                 priority
               />
               <h2 className="mt-6 font-display text-2xl font-semibold text-white">
-                {mode === "signup" ? "Join HZ Technology" : mode === "forgot" ? "Forgot your password?" : "Welcome Back"}
+                {mode === "signup" ? "Join FAAH Technology" : mode === "forgot" ? "Forgot your password?" : "Welcome Back"}
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-muted">
                 {mode === "signup"
                   ? "Create an account to place orders, track progress, and manage everything from one dashboard."
                   : mode === "forgot"
                     ? "No worries — enter your email and we'll send you a link to get back in."
-                    : "Sign in to view your orders, track projects, and stay connected with HZ Technology."}
+                    : "Sign in to view your orders, track projects, and stay connected with FAAH Technology."}
               </p>
               <ul className="mt-8 space-y-3 text-left">
                 {FEATURES.map((f) => (
@@ -285,14 +285,14 @@ export default function AuthScreen() {
               {/* Compact brand header on mobile */}
               <div className="mb-8 flex items-center gap-3 lg:hidden">
                 <Image
-                  src="/logo/hz_logo_512x512.png"
-                  alt="HZ Technology"
+                  src="/logo/faah_logo_512x512.png"
+                  alt="FAAH Technology"
                   width={40}
                   height={40}
                   className="h-10 w-10 object-contain"
                 />
                 <span className="font-display text-sm font-semibold leading-tight tracking-wide text-white">
-                  HZ
+                  FAAH
                   <span className="block text-[10px] font-medium tracking-[0.3em] text-muted">TECHNOLOGY</span>
                 </span>
               </div>
@@ -450,7 +450,7 @@ export default function AuthScreen() {
                     </form>
 
                     <p className="mt-8 text-center text-sm text-muted">
-                      {mode === "signin" ? "New to HZ Technology?" : "Already have an account?"}{" "}
+                      {mode === "signin" ? "New to FAAH Technology?" : "Already have an account?"}{" "}
                       <button
                         type="button"
                         onClick={() => switchMode(mode === "signin" ? "signup" : "signin")}

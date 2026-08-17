@@ -83,7 +83,7 @@ export default function PortfolioHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/portfolio/hero.png"
-            alt="HZ Technology portfolio showcase — laptop, tablet, and phone mockups of web development code, graphic design, branding, and UI/UX work around the HZ logo"
+            alt="FAAH Technology portfolio showcase — laptop, tablet, and phone mockups of web development code, graphic design, branding, and UI/UX work around the FAAH logo"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

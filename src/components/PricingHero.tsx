@@ -62,7 +62,7 @@ export default function PricingHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/pricing/hero.png"
-            alt="HZ Technology pricing plans — Basic, Standard, and Premium package cards with pricing and feature highlights"
+            alt="FAAH Technology pricing plans — Basic, Standard, and Premium package cards with pricing and feature highlights"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

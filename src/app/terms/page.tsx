@@ -5,17 +5,17 @@ import LegalContent, { type LegalSection } from "@/components/LegalContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — HZ Technology",
+  title: "Terms of Service — FAAH Technology",
   description:
-    "Read the Terms of Service governing your use of the HZ Technology website and our graphic design, web, mobile, and custom software services.",
+    "Read the Terms of Service governing your use of the FAAH Technology website and our graphic design, web, mobile, and custom software services.",
   alternates: { canonical: "/terms" },
 };
 
 const SECTIONS: LegalSection[] = [
   {
-    heading: "About HZ Technology",
+    heading: "About FAAH Technology",
     blocks: [
-      { type: "p", text: "HZ Technology provides professional digital services, including but not limited to:" },
+      { type: "p", text: "FAAH Technology provides professional digital services, including but not limited to:" },
       {
         type: "ul",
         items: [
@@ -129,7 +129,7 @@ const SECTIONS: LegalSection[] = [
         type: "ul",
         items: [
           "Clients receive ownership of the final approved deliverables after full payment.",
-          "HZ Technology retains ownership of any pre-existing tools, frameworks, templates, libraries, or reusable code used during development.",
+          "FAAH Technology retains ownership of any pre-existing tools, frameworks, templates, libraries, or reusable code used during development.",
           "We may showcase completed work in our portfolio unless the client requests confidentiality in writing.",
         ],
       },
@@ -168,7 +168,7 @@ const SECTIONS: LegalSection[] = [
       },
       {
         type: "p",
-        text: "HZ Technology reserves the right to refuse projects that conflict with our policies or applicable law.",
+        text: "FAAH Technology reserves the right to refuse projects that conflict with our policies or applicable law.",
       },
     ],
   },
@@ -213,7 +213,7 @@ const SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        text: "To the fullest extent permitted by law, HZ Technology is not liable for indirect, incidental, special, or consequential damages, including loss of profits, data, or business opportunities arising from the use of our services.",
+        text: "To the fullest extent permitted by law, FAAH Technology is not liable for indirect, incidental, special, or consequential damages, including loss of profits, data, or business opportunities arising from the use of our services.",
       },
       {
         type: "p",
@@ -268,7 +268,7 @@ const SECTIONS: LegalSection[] = [
   {
     heading: "Changes to These Terms",
     blocks: [
-      { type: "p", text: "HZ Technology may update these Terms of Service from time to time." },
+      { type: "p", text: "FAAH Technology may update these Terms of Service from time to time." },
       { type: "p", text: "The latest version will always be available on this page, with the updated revision date." },
     ],
   },
@@ -277,7 +277,7 @@ const SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        text: "These Terms are governed by the laws applicable in the jurisdiction where HZ Technology operates, unless another governing law is agreed in writing or required by applicable law.",
+        text: "These Terms are governed by the laws applicable in the jurisdiction where FAAH Technology operates, unless another governing law is agreed in writing or required by applicable law.",
       },
     ],
   },
@@ -288,13 +288,13 @@ const SECTIONS: LegalSection[] = [
       {
         type: "ul",
         items: [
-          "HZ Technology",
+          "FAAH Technology",
           "Email: hztechnology999@gmail.com",
           "Phone / WhatsApp: +92 345 5163 857",
           <>
             Website:{" "}
-            <a href="https://hztechnology.com" className="text-gold hover:underline">
-              hztechnology.com
+            <a href="https://faahtechnology.com" className="text-gold hover:underline">
+              faahtechnology.com
             </a>
           </>,
         ],
@@ -323,7 +323,7 @@ export default function TermsPage() {
               lastUpdated="July 2026"
               intro={
                 <>
-                  Welcome to HZ Technology. These Terms of Service (&ldquo;Terms&rdquo;) govern your use of our
+                  Welcome to FAAH Technology. These Terms of Service (&ldquo;Terms&rdquo;) govern your use of our
                   website and the services we provide. By accessing our website or engaging our services, you
                   agree to these Terms. If you do not agree, please do not use our website or services.
                 </>
@@ -333,11 +333,11 @@ export default function TermsPage() {
                 heading: "Agreement",
                 text: (
                   <>
-                    By using the HZ Technology website or purchasing our services, you acknowledge that you have
+                    By using the FAAH Technology website or purchasing our services, you acknowledge that you have
                     read, understood, and agree to these Terms of Service.
                     <br />
                     <br />
-                    <strong className="text-white">Our Commitment</strong> — At HZ Technology, we are committed to
+                    <strong className="text-white">Our Commitment</strong> — At FAAH Technology, we are committed to
                     delivering high-quality Graphic Design, Website Development, Mobile App Development, and
                     Custom Desktop Software Development services with professionalism, transparency, and
                     long-term client support. We value clear communication, fair business practices, and building

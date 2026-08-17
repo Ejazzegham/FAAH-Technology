@@ -20,7 +20,7 @@ export default function BlogDiscover() {
           </p>
           <p className="mt-4 text-sm leading-relaxed text-muted">
             Whether you&apos;re a business owner, startup founder, freelancer,
-            designer, developer, or tech enthusiast, the HZ Technology Blog
+            designer, developer, or tech enthusiast, the FAAH Technology Blog
             provides valuable insights that inspire creativity, improve
             productivity, and support long-term success.
           </p>

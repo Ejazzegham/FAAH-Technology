@@ -76,7 +76,7 @@ const FAQS = [
     a: "Yes. We develop AI-powered desktop applications featuring intelligent automation, predictive analytics, chatbots, reporting, and business insights.",
   },
   {
-    q: "Why should I choose HZ Technology?",
+    q: "Why should I choose FAAH Technology?",
     a: "We combine creativity, modern design trends, and strategic thinking to deliver premium-quality software that strengthens your business. We focus on originality, fast communication, timely delivery, and complete client satisfaction.",
   },
   {
@@ -112,7 +112,7 @@ export default function DesktopSoftwareFaq() {
       </h2>
       <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted">
         Everything you need to know before starting your desktop software
-        project with HZ Technology.
+        project with FAAH Technology.
       </p>
 
       <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-3 text-left sm:grid-cols-2">

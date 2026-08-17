@@ -63,7 +63,7 @@ export default function BlogHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/blog/hero.png"
-            alt="HZ Technology blog — laptop displaying the blog homepage surrounded by icons for design insights, development, mobile apps, industry trends, news and updates, and expert opinions"
+            alt="FAAH Technology blog — laptop displaying the blog homepage surrounded by icons for design insights, development, mobile apps, industry trends, news and updates, and expert opinions"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

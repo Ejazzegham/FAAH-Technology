@@ -55,7 +55,7 @@ export default function GraphicDesignHero() {
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted lg:mx-0">
             Build a strong and memorable brand with custom graphic design
-            solutions from HZ Technology. From logos and brand identity to
+            solutions from FAAH Technology. From logos and brand identity to
             marketing materials, social media graphics, packaging, and UI
             assets, we create visually compelling designs that communicate
             your message and leave a lasting impression.
@@ -83,7 +83,7 @@ export default function GraphicDesignHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/graphic-design/hero.png"
-            alt="HZ Technology graphic design workspace showing logo, branding, and poster design work"
+            alt="FAAH Technology graphic design workspace showing logo, branding, and poster design work"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

@@ -9,9 +9,9 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mobile App Design & Development — HZ Technology",
+  title: "Mobile App Design & Development — FAAH Technology",
   description:
-    "Explore HZ Technology's full mobile app service menu — business, eCommerce, finance, healthcare, on-demand, AI-powered apps and more — plus answers to common questions.",
+    "Explore FAAH Technology's full mobile app service menu — business, eCommerce, finance, healthcare, on-demand, AI-powered apps and more — plus answers to common questions.",
   alternates: { canonical: "/mobile-app-development" },
 };
 

@@ -3,7 +3,7 @@ import { getPublishedPosts } from "@/lib/firestore/blog";
 import { getPublishedPages } from "@/lib/firestore/pages";
 import { getAllProjects } from "@/lib/projects";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hztechnology.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://faahtechnology.com";
 
 const STATIC_ROUTES = [
   { path: "/", priority: 1.0, changeFrequency: "weekly" as const },

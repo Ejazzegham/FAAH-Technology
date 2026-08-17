@@ -54,7 +54,7 @@ export default function MobileAppHero() {
           </p>
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted lg:mx-0">
-            HZ Technology creates high-performance mobile applications that
+            FAAH Technology creates high-performance mobile applications that
             combine stunning design with powerful functionality. From
             business and eCommerce apps to on-demand platforms and
             AI-powered solutions, we build secure, scalable apps that
@@ -83,7 +83,7 @@ export default function MobileAppHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/mobile-app/hero.png"
-            alt="HZ Technology mobile app design and development workspace showing app UI mockups and wireframes"
+            alt="FAAH Technology mobile app design and development workspace showing app UI mockups and wireframes"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

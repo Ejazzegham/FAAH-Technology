@@ -68,7 +68,7 @@ const FAQS = [
     a: "Yes. We develop AI-powered apps with features such as chatbots, intelligent recommendations, image recognition, voice assistants, automation, and predictive analytics.",
   },
   {
-    q: "Why should I choose HZ Technology?",
+    q: "Why should I choose FAAH Technology?",
     a: "We combine creativity, modern development practices, and strategic thinking to deliver premium-quality apps that strengthen your brand. We focus on originality, fast communication, timely delivery, and complete client satisfaction.",
   },
   {
@@ -104,7 +104,7 @@ export default function MobileAppFaq() {
       </h2>
       <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted">
         Everything you need to know before starting your mobile app project
-        with HZ Technology.
+        with FAAH Technology.
       </p>
 
       <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-3 text-left sm:grid-cols-2">

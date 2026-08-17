@@ -21,19 +21,20 @@ const inter = Inter({
 export async function generateMetadata(): Promise<Metadata> {
   const { seo } = await getSettingsOnce();
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://hztechnology.com"),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://faahtechnology.com"),
     title: seo.title,
     description: seo.description,
     keywords: seo.keywords,
     alternates: { canonical: "/" },
     icons: {
       icon: "/favicon.ico",
+      apple: "/apple-touch-icon.png",
     },
     openGraph: {
       title: seo.title,
       description: seo.description,
       type: "website",
-      siteName: "HZ Technology",
+      siteName: "FAAH Technology",
       images: seo.ogImage ? [{ url: seo.ogImage }] : undefined,
     },
     twitter: {
@@ -55,12 +56,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const settings = await getSettingsOnce();
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hztechnology.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://faahtechnology.com";
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "HZ Technology",
+    name: "FAAH Technology",
     description: settings.seo.description,
     url: siteUrl,
     telephone: settings.contactPhone,

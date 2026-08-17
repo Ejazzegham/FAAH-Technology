@@ -54,7 +54,7 @@ export default function DesktopSoftwareHero() {
           </p>
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted lg:mx-0">
-            HZ Technology develops secure, high-performance desktop
+            FAAH Technology develops secure, high-performance desktop
             applications tailored to your business needs. From ERP and CRM
             systems to POS software, productivity tools, and custom business
             automation solutions, we build reliable desktop applications for
@@ -84,7 +84,7 @@ export default function DesktopSoftwareHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/desktop-software/hero.png"
-            alt="HZ Technology desktop app design and development workspace showing dashboards, wireframes, and app process"
+            alt="FAAH Technology desktop app design and development workspace showing dashboards, wireframes, and app process"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

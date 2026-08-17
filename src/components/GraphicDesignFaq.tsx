@@ -68,7 +68,7 @@ const FAQS = [
     a: "Yes. We provide long-term graphic design support for businesses that need regular updates and marketing materials.",
   },
   {
-    q: "Why should I choose HZ Technology?",
+    q: "Why should I choose FAAH Technology?",
     a: "We combine creativity, modern design trends, and strategic thinking to deliver premium-quality designs that strengthen your brand. We focus on originality, fast communication, timely delivery, and complete client satisfaction.",
   },
   {
@@ -104,7 +104,7 @@ export default function GraphicDesignFaq() {
       </h2>
       <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted">
         Everything you need to know before starting your graphic design
-        project with HZ Technology.
+        project with FAAH Technology.
       </p>
 
       <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-3 text-left sm:grid-cols-2">

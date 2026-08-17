@@ -21,7 +21,7 @@ export default function AboutTeam() {
         <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
       </p>
       <h2 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
-        Meet The Minds Behind HZ Technology
+        Meet The Minds Behind FAAH Technology
       </h2>
 
       <div className="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-8">

@@ -9,9 +9,9 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Desktop App Designing & Developing — HZ Technology",
+  title: "Desktop App Designing & Developing — FAAH Technology",
   description:
-    "Explore HZ Technology's full desktop software service menu — ERP, CRM, POS, business automation, industry-specific systems, and more — plus answers to common questions.",
+    "Explore FAAH Technology's full desktop software service menu — ERP, CRM, POS, business automation, industry-specific systems, and more — plus answers to common questions.",
   alternates: { canonical: "/desktop-software" },
 };
 

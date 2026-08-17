@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// HZ Technology — Firestore security rules.
+// FAAH Technology — Firestore security rules.
 //
 // IMPORTANT: the email list below MUST match src/lib/admin-emails.ts exactly.
 // That file only controls what the admin UI *shows* — this file is the real

@@ -34,7 +34,7 @@ export default function AboutHero() {
           </p>
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted lg:mx-0">
-            At HZ Technology, we transform ideas into powerful digital
+            At FAAH Technology, we transform ideas into powerful digital
             experiences. From creative branding and modern websites to
             mobile applications and custom software, we deliver innovative
             solutions that help businesses grow, connect with customers,
@@ -63,7 +63,7 @@ export default function AboutHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/about/hero.png"
-            alt="HZ Technology team collaborating around a laptop, surrounded by icons for graphic design, UI/UX design, web development, mobile app development, and custom solutions"
+            alt="FAAH Technology team collaborating around a laptop, surrounded by icons for graphic design, UI/UX design, web development, mobile app development, and custom solutions"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

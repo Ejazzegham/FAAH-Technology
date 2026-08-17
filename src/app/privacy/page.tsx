@@ -4,9 +4,9 @@ import LegalContent, { type LegalSection } from "@/components/LegalContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — HZ Technology",
+  title: "Privacy Policy — FAAH Technology",
   description:
-    "Learn how HZ Technology collects, uses, protects, and discloses your information when you visit our website or use our services.",
+    "Learn how FAAH Technology collects, uses, protects, and discloses your information when you visit our website or use our services.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -110,7 +110,7 @@ const SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        text: "All project files, designs, source code, business information, and confidential documents shared with HZ Technology remain strictly confidential.",
+        text: "All project files, designs, source code, business information, and confidential documents shared with FAAH Technology remain strictly confidential.",
       },
       { type: "p", text: "We never share client information without written permission unless required by law." },
     ],
@@ -119,7 +119,7 @@ const SECTIONS: LegalSection[] = [
     heading: "Payments",
     blocks: [
       { type: "p", text: "Payments are processed through secure payment providers." },
-      { type: "p", text: "HZ Technology does not store your credit card or banking information on our servers." },
+      { type: "p", text: "FAAH Technology does not store your credit card or banking information on our servers." },
     ],
   },
   {
@@ -130,7 +130,7 @@ const SECTIONS: LegalSection[] = [
         type: "ul",
         items: [
           "Clients own the final approved project after full payment.",
-          "HZ Technology retains the right to display completed work in our portfolio unless requested otherwise by the client.",
+          "FAAH Technology retains the right to display completed work in our portfolio unless requested otherwise by the client.",
         ],
       },
     ],
@@ -172,7 +172,7 @@ const SECTIONS: LegalSection[] = [
   {
     heading: "Changes to This Privacy Policy",
     blocks: [
-      { type: "p", text: "HZ Technology may update this Privacy Policy at any time." },
+      { type: "p", text: "FAAH Technology may update this Privacy Policy at any time." },
       { type: "p", text: "Changes will be posted on this page with the updated revision date." },
     ],
   },
@@ -183,13 +183,13 @@ const SECTIONS: LegalSection[] = [
       {
         type: "ul",
         items: [
-          "HZ Technology",
+          "FAAH Technology",
           "Email: hztechnology999@gmail.com",
           "Phone / WhatsApp: +92 345 5163 857",
           <>
             Website:{" "}
-            <a href="https://hztechnology.com" className="text-gold hover:underline">
-              hztechnology.com
+            <a href="https://faahtechnology.com" className="text-gold hover:underline">
+              faahtechnology.com
             </a>
           </>,
         ],
@@ -227,7 +227,7 @@ export default function PrivacyPage() {
               lastUpdated="July 2026"
               intro={
                 <>
-                  Welcome to HZ Technology. Your privacy is important to us. This Privacy Policy explains how we
+                  Welcome to FAAH Technology. Your privacy is important to us. This Privacy Policy explains how we
                   collect, use, protect, and disclose your information when you visit our website or use our
                   services.
                   <br />
@@ -238,7 +238,7 @@ export default function PrivacyPage() {
               sections={SECTIONS}
               closing={{
                 heading: "Our Commitment",
-                text: "At HZ Technology, we value your trust and are committed to protecting your privacy. Whether you need Graphic Design, Website Development, Mobile App Development, or Custom Desktop Software, your information is handled with professionalism, confidentiality, and the highest standards of security.",
+                text: "At FAAH Technology, we value your trust and are committed to protecting your privacy. Whether you need Graphic Design, Website Development, Mobile App Development, or Custom Desktop Software, your information is handled with professionalism, confidentiality, and the highest standards of security.",
               }}
             />
           </div>

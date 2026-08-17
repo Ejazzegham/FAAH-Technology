@@ -13,7 +13,7 @@ function Icon({ icon }: { icon: "logo" | "plane" | "headset" }) {
   if (icon === "logo") {
     return (
       <Image
-        src="/logo/hz_logo_512x512.png"
+        src="/logo/faah_logo_512x512.png"
         alt=""
         width={44}
         height={44}

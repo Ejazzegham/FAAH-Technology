@@ -10,9 +10,9 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   const page = await getPublishedPageBySlug(params.slug);
-  if (!page) return { title: "Page Not Found — HZ Technology" };
+  if (!page) return { title: "Page Not Found — FAAH Technology" };
   return {
-    title: `${page.title} — HZ Technology`,
+    title: `${page.title} — FAAH Technology`,
     description: page.content.slice(0, 160),
     alternates: { canonical: `/pages/${page.slug}` },
   };

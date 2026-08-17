@@ -53,8 +53,8 @@ export default function AdminLogin() {
       <div className="w-full max-w-sm rounded-xl border border-line bg-bg-card p-8">
         <div className="flex flex-col items-center text-center">
           <Image
-            src="/logo/hz_logo_512x512.png"
-            alt="HZ Technology"
+            src="/logo/faah_logo_512x512.png"
+            alt="FAAH Technology"
             width={48}
             height={48}
             className="h-12 w-12 object-contain"

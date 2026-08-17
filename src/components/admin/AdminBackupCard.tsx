@@ -44,7 +44,7 @@ export default function AdminBackupCard() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `hz-technology-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = `faah-technology-backup-${new Date().toISOString().slice(0, 10)}.json`;
       a.click();
       URL.revokeObjectURL(url);
       setStatus({ type: "ok", text: "Backup downloaded." });

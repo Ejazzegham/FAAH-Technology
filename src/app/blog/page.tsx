@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import { getPublishedPosts } from "@/lib/firestore/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — HZ Technology",
+  title: "Blog — FAAH Technology",
   description: "Insights on design, development, and building great digital products.",
   alternates: { canonical: "/blog" },
 };
@@ -55,7 +55,7 @@ export default async function BlogPage() {
                         />
                       ) : (
                         <div className="flex h-full items-center justify-center text-white/20">
-                          <span className="font-display text-sm">HZ Technology</span>
+                          <span className="font-display text-sm">FAAH Technology</span>
                         </div>
                       )}
                     </div>

@@ -17,7 +17,7 @@ export default function About() {
         <div className="rgb-box relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-gradient-to-br from-bg-card to-bg">
           <Image
             src="/team/founder-portrait.png"
-            alt="Ejaz Zegham — HZ Technology"
+            alt="Ejaz Zegham — FAAH Technology"
             width={900}
             height={1125}
             className="absolute inset-0 h-full w-full object-cover object-top"

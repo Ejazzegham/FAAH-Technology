@@ -14,10 +14,10 @@ export async function generateMetadata({
   params: { id: string };
 }): Promise<Metadata> {
   const project = await getProjectById(params.id);
-  if (!project) return { title: "Project Not Found — HZ Technology" };
+  if (!project) return { title: "Project Not Found — FAAH Technology" };
   return {
-    title: `${project.title} — HZ Technology Portfolio`,
-    description: project.description || `${project.title} — ${CATEGORY_LABELS[project.category]} project by HZ Technology.`,
+    title: `${project.title} — FAAH Technology Portfolio`,
+    description: project.description || `${project.title} — ${CATEGORY_LABELS[project.category]} project by FAAH Technology.`,
     openGraph: {
       title: project.title,
       description: project.description || undefined,

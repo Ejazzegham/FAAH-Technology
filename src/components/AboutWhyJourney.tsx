@@ -37,7 +37,7 @@ const JOURNEY = [
   {
     year: "2010",
     title: "The Beginning",
-    text: "HZ Technology was founded with a vision to blend design and technology.",
+    text: "FAAH Technology was founded with a vision to blend design and technology.",
     icon: (
       <>
         <path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.5 9.4l6.6-.9L12 2.5z" />
@@ -102,7 +102,7 @@ export default function AboutWhyJourney() {
           We Build Solutions, <span className="text-gold">We Build Trust.</span>
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted">
-          At HZ Technology, we combine creativity, technology, and strategy to deliver
+          At FAAH Technology, we combine creativity, technology, and strategy to deliver
           digital solutions that help your business grow, stand out, and succeed in the
           modern digital world.
         </p>

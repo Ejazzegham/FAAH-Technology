@@ -7,9 +7,9 @@ import { getAllProjects } from "@/lib/projects";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio — HZ Technology",
+  title: "Portfolio — FAAH Technology",
   description:
-    "Explore HZ Technology's recent projects across graphic design, web, mobile, and desktop software development.",
+    "Explore FAAH Technology's recent projects across graphic design, web, mobile, and desktop software development.",
   alternates: { canonical: "/portfolio" },
 };
 

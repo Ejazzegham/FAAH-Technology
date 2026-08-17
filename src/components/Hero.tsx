@@ -26,7 +26,7 @@ export default function Hero() {
           <h1 className="mx-auto mt-4 max-w-xl font-display text-3xl font-semibold leading-[1.15] sm:text-4xl lg:mx-0 lg:text-5xl">
             <span className="text-white">Welcome to</span>
             <br />
-            <span className="text-gold tracking-tight">HZ Technology</span>
+            <span className="text-gold tracking-tight">FAAH Technology</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-xl text-sm font-semibold tracking-wide text-white/80 sm:text-base lg:mx-0">
@@ -62,7 +62,7 @@ export default function Hero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/home/hero.png"
-            alt="HZ Technology emblem set against a global digital network, representing worldwide reach and technology-driven growth"
+            alt="FAAH Technology emblem set against a global digital network, representing worldwide reach and technology-driven growth"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

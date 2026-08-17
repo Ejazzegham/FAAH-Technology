@@ -14,7 +14,7 @@ export default function ContactIntro() {
 
       <div className="mx-auto mt-10 max-w-3xl text-center">
         <p className="font-display text-lg leading-relaxed text-white/90 sm:text-xl">
-          At HZ Technology, every great project starts with a conversation.
+          At FAAH Technology, every great project starts with a conversation.
           Whether you need a new brand, website, mobile app, or custom
           software solution, we&apos;re here to turn your ideas into reality.
         </p>

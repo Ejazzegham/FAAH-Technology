@@ -54,7 +54,7 @@ export default function WebDesignHero() {
           </p>
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted lg:mx-0">
-            At HZ Technology, we design and develop fast, secure, and
+            At FAAH Technology, we design and develop fast, secure, and
             responsive websites tailored to your business goals. From
             corporate websites and eCommerce stores to custom web
             applications and admin dashboards, we build scalable digital
@@ -84,7 +84,7 @@ export default function WebDesignHero() {
         <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
           <Image
             src="/web-design/hero.png"
-            alt="HZ Technology web design and development workspace showing code, wireframes, and website mockups"
+            alt="FAAH Technology web design and development workspace showing code, wireframes, and website mockups"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

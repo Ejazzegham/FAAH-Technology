@@ -19,7 +19,7 @@ export default function AboutStory() {
           <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
         </p>
         <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-white sm:text-3xl">
-          About <span className="text-gold">HZ Technology</span>
+          About <span className="text-gold">FAAH Technology</span>
         </h2>
       </div>
 
@@ -68,7 +68,7 @@ export default function AboutStory() {
 
           <div className="mt-6 flex flex-1 flex-col justify-between gap-4 text-base leading-relaxed text-muted">
             <p>
-              At HZ Technology, we create innovative digital solutions that
+              At FAAH Technology, we create innovative digital solutions that
               combine creativity with reliable technology. Our goal is to help
               businesses, startups, and entrepreneurs build a strong digital
               presence with high-quality, results-driven services.
@@ -86,7 +86,7 @@ export default function AboutStory() {
               dependable support to ensure every project exceeds expectations.
             </p>
             <p>
-              At HZ Technology, we don&apos;t just design and develop—we
+              At FAAH Technology, we don&apos;t just design and develop—we
               create digital experiences that help businesses grow, strengthen
               their brand, and achieve lasting success.
             </p>

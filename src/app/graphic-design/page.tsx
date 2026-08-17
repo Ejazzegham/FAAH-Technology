@@ -9,9 +9,9 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Graphic Design Services — HZ Technology",
+  title: "Graphic Design Services — FAAH Technology",
   description:
-    "Explore HZ Technology's full graphic design service menu — logo & branding, print design, packaging, marketing graphics, UI/UX, and more — plus answers to common questions.",
+    "Explore FAAH Technology's full graphic design service menu — logo & branding, print design, packaging, marketing graphics, UI/UX, and more — plus answers to common questions.",
   alternates: { canonical: "/graphic-design" },
 };
 

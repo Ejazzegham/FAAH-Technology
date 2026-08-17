@@ -49,7 +49,7 @@ export default function ContactMap() {
 
           <div className="mt-6 flex flex-1 flex-col justify-between gap-4 text-base leading-relaxed text-muted">
             <p>
-              At HZ Technology, we believe every successful project begins
+              At FAAH Technology, we believe every successful project begins
               with a meaningful conversation. Whether you&apos;re launching a
               new business, expanding your digital presence, or transforming
               an existing brand, our team is ready to help bring your vision
