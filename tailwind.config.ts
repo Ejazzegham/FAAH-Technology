@@ -14,9 +14,9 @@ const config: Config = {
           card: "#131318",
         },
         gold: {
-          DEFAULT: "#d4a24e",
-          light: "#e8c27a",
-          dark: "#b8863b",
+          DEFAULT: "#1477f5",
+          light: "#5b9dff",
+          dark: "#0a3fc4",
         },
         line: "#232329",
         muted: "#9a9aa3",
@@ -26,10 +26,10 @@ const config: Config = {
         body: ["var(--font-body)", "sans-serif"],
       },
       backgroundImage: {
-        "gold-gradient": "linear-gradient(135deg, #f0c878 0%, #d4a24e 45%, #a8792f 100%)",
+        "gold-gradient": "linear-gradient(135deg, #5b9dff 0%, #1477f5 45%, #0a3fc4 100%)",
       },
       boxShadow: {
-        gold: "0 0 40px -10px rgba(212,162,78,0.35)",
+        gold: "0 0 40px -10px rgba(20,119,245,0.35)",
       },
       // Site-wide default border width, matched to the hero image frame
       // (.rgb-box) so every plain `border` utility is visually consistent.

@@ -63,7 +63,7 @@ Message:
 ${message}`,
       html: `
         <div style="font-family: sans-serif; color:#1a1a1a; line-height:1.6;">
-          <h2 style="color:#b8863b;">New website inquiry</h2>
+          <h2 style="color:#0a3fc4;">New website inquiry</h2>
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>
           <p><strong>Email:</strong> ${escapeHtml(email)}</p>
           <p><strong>Subject:</strong> ${escapeHtml(subject || "(none)")}</p>

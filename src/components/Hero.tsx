@@ -9,14 +9,27 @@ const CHECKLIST = [
 
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/4 translate-x-1/4 rounded-full bg-gold/10 blur-3xl"
-      />
+    <section id="home" className="relative min-h-[560px] overflow-hidden lg:min-h-[680px]">
+      {/* Full-bleed artwork — spans the entire section width, not boxed or
+          cropped to a card. Its own background is already near-black, so it
+          blends straight into the page instead of sitting in a frame. */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/home/hero-glow.png"
+          alt="FAAH Technology emblem glowing in blue, set on a dark futuristic stage, representing innovation and technology-driven growth"
+          fill
+          className="object-cover object-[78%_center] lg:object-[70%_center]"
+          sizes="100vw"
+          priority
+        />
+        {/* Legibility gradient: solid over the text on the left, fading out
+            toward the emblem on the right so the artwork stays untouched. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent" />
+      </div>
 
-      <div className="section grid items-center gap-12 pb-10 pt-8 lg:grid-cols-[1.05fr_1fr] lg:gap-10 lg:pt-12">
-        <div className="text-center lg:text-left">
+      <div className="section relative flex min-h-[560px] items-center py-24 lg:min-h-[680px] lg:py-32">
+        <div className="max-w-xl text-center lg:text-left">
           <p className="flex items-center justify-center gap-3 text-xs font-semibold tracking-[0.25em] text-gold lg:justify-start">
             <span aria-hidden className="h-px w-5 bg-gradient-to-r from-transparent to-gold" />
             HELLO, WE&apos;RE
@@ -57,17 +70,6 @@ export default function Hero() {
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
-          <Image
-            src="/home/hero.png"
-            alt="FAAH Technology emblem set against a global digital network, representing worldwide reach and technology-driven growth"
-            fill
-            className="object-cover"
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            priority
-          />
         </div>
       </div>
     </section>

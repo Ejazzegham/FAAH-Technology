@@ -63,7 +63,7 @@ export const DEFAULT_SETTINGS: SiteSettings = {
     ogImage: "/logo/faah_logo_1024x1024.png",
   },
   appearance: {
-    accentColor: "#d4a24e",
+    accentColor: "#1477f5",
     logoUrl: "/logo/faah_logo_512x512.png",
     tagline: "Designing beautiful experiences. Building powerful solutions.",
   },

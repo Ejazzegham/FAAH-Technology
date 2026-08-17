@@ -43,26 +43,26 @@ body {
   .btn-primary {
     @apply inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold text-bg transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-gold;
     border: 2px solid transparent;
-    background-image: linear-gradient(135deg, #f0c878 0%, #d4a24e 45%, #a8792f 100%),
-      linear-gradient(135deg, #f0c878 0%, #d4a24e 45%, #a8792f 100%);
+    background-image: linear-gradient(135deg, #5b9dff 0%, #1477f5 45%, #0a3fc4 100%),
+      linear-gradient(135deg, #5b9dff 0%, #1477f5 45%, #0a3fc4 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
   .btn-primary:hover {
-    background-image: linear-gradient(135deg, #f5d596 0%, #e8c27a 45%, #c49048 100%),
-      linear-gradient(135deg, #f5d596 0%, #e8c27a 45%, #c49048 100%);
+    background-image: linear-gradient(135deg, #8ab8ff 0%, #4d94ff 45%, #1477f5 100%),
+      linear-gradient(135deg, #8ab8ff 0%, #4d94ff 45%, #1477f5 100%);
   }
   .btn-outline {
     @apply inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold text-gold transition-colors duration-200 hover:text-bg;
     border: 2px solid transparent;
     background-image: linear-gradient(#0a0a0d, #0a0a0d),
-      linear-gradient(rgba(212, 162, 78, 0.6), rgba(212, 162, 78, 0.6));
+      linear-gradient(rgba(20, 119, 245, 0.6), rgba(20, 119, 245, 0.6));
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
   .btn-outline:hover {
-    background-image: linear-gradient(#d4a24e, #d4a24e),
-      linear-gradient(#d4a24e, #d4a24e);
+    background-image: linear-gradient(#1477f5, #1477f5),
+      linear-gradient(#1477f5, #1477f5);
   }
   .card {
     @apply rounded-xl p-8 transition-all duration-300 hover:-translate-y-1;
@@ -279,7 +279,7 @@ body {
 .rgb-text:hover,
 .rgb-text:focus-visible {
   filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.45))
-    drop-shadow(0 0 34px rgba(212, 162, 78, 0.45))
+    drop-shadow(0 0 34px rgba(20, 119, 245, 0.45))
     drop-shadow(0 0 58px rgba(193, 77, 255, 0.25));
 }
 
@@ -345,20 +345,20 @@ body {
 .timeline-line {
   background: linear-gradient(
     180deg,
-    rgba(212, 162, 78, 0) 0%,
-    rgba(212, 162, 78, 0.55) 8%,
-    rgba(212, 162, 78, 0.55) 92%,
-    rgba(212, 162, 78, 0) 100%
+    rgba(20, 119, 245, 0) 0%,
+    rgba(20, 119, 245, 0.55) 8%,
+    rgba(20, 119, 245, 0.55) 92%,
+    rgba(20, 119, 245, 0) 100%
   );
 }
 @media (min-width: 1024px) {
   .timeline-line {
     background: linear-gradient(
       90deg,
-      rgba(212, 162, 78, 0) 0%,
-      rgba(212, 162, 78, 0.55) 6%,
-      rgba(212, 162, 78, 0.55) 94%,
-      rgba(212, 162, 78, 0) 100%
+      rgba(20, 119, 245, 0) 0%,
+      rgba(20, 119, 245, 0.55) 6%,
+      rgba(20, 119, 245, 0.55) 94%,
+      rgba(20, 119, 245, 0) 100%
     );
   }
 }

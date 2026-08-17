@@ -252,7 +252,7 @@ export default function AuthScreen() {
                 alt="FAAH Technology"
                 width={220}
                 height={220}
-                className="mx-auto w-44 drop-shadow-[0_0_60px_rgba(212,162,78,0.35)]"
+                className="mx-auto w-44 drop-shadow-[0_0_60px_rgba(20,119,245,0.35)]"
                 priority
               />
               <h2 className="mt-6 font-display text-2xl font-semibold text-white">
@@ -401,7 +401,7 @@ export default function AuthScreen() {
                               type="checkbox"
                               checked={rememberMe}
                               onChange={(e) => setRememberMe(e.target.checked)}
-                              className="h-3.5 w-3.5 rounded border-line bg-bg accent-[#d4a24e]"
+                              className="h-3.5 w-3.5 rounded border-line bg-bg accent-[#1477f5]"
                             />
                             Remember me
                           </label>
@@ -419,7 +419,7 @@ export default function AuthScreen() {
                             type="checkbox"
                             checked={agree}
                             onChange={(e) => setAgree(e.target.checked)}
-                            className="mt-0.5 h-3.5 w-3.5 rounded border-line bg-bg accent-[#d4a24e]"
+                            className="mt-0.5 h-3.5 w-3.5 rounded border-line bg-bg accent-[#1477f5]"
                           />
                           <span>
                             I agree to the{" "}

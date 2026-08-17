@@ -17,8 +17,8 @@ export default function AdminPerformanceChart({ data }: { data: TrendPoint[] }) 
           <AreaChart data={data} margin={{ left: -20, right: 10 }}>
             <defs>
               <linearGradient id="perfGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#d4a24e" stopOpacity={0.5} />
-                <stop offset="100%" stopColor="#d4a24e" stopOpacity={0} />
+                <stop offset="0%" stopColor="#1477f5" stopOpacity={0.5} />
+                <stop offset="100%" stopColor="#1477f5" stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="#232329" vertical={false} />
@@ -36,7 +36,7 @@ export default function AdminPerformanceChart({ data }: { data: TrendPoint[] }) 
             <Area
               type="monotone"
               dataKey="value"
-              stroke="#d4a24e"
+              stroke="#1477f5"
               strokeWidth={2}
               fill="url(#perfGradient)"
               dot={false}

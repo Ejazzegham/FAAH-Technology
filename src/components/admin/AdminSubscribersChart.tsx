@@ -40,7 +40,7 @@ export default function AdminSubscribersChart({
             <XAxis dataKey="month" stroke="#9a9aa3" tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
             <YAxis stroke="#9a9aa3" tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
             <Tooltip
-              cursor={{ fill: "rgba(212,162,78,0.08)" }}
+              cursor={{ fill: "rgba(20,119,245,0.08)" }}
               contentStyle={{
                 background: "#131318",
                 border: "1px solid #232329",
@@ -49,7 +49,7 @@ export default function AdminSubscribersChart({
               }}
               labelStyle={{ color: "#f3f2ee" }}
             />
-            <Bar dataKey="value" fill="#d4a24e" radius={[4, 4, 0, 0]} maxBarSize={22} />
+            <Bar dataKey="value" fill="#1477f5" radius={[4, 4, 0, 0]} maxBarSize={22} />
           </BarChart>
         </ResponsiveContainer>
       </div>

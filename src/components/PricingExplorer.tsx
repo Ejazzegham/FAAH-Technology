@@ -189,7 +189,7 @@ export default function PricingExplorer() {
                   ...(isActive
                     ? {
                         backgroundImage:
-                          "linear-gradient(#0f0f13,#0f0f13), linear-gradient(#d4a24e,#d4a24e)",
+                          "linear-gradient(#0f0f13,#0f0f13), linear-gradient(#1477f5,#1477f5)",
                       }
                     : {}),
                 }}
@@ -266,7 +266,7 @@ export default function PricingExplorer() {
                   ...(tier.highlighted
                     ? {
                         backgroundImage:
-                          "linear-gradient(#131318,#131318), linear-gradient(#d4a24e,#d4a24e)",
+                          "linear-gradient(#131318,#131318), linear-gradient(#1477f5,#1477f5)",
                       }
                     : {}),
                 }}
