@@ -37,7 +37,7 @@ function OrdersView() {
     <div className="mx-auto max-w-2xl">
       <div className="rgb-box flex items-center justify-between rounded-xl p-6">
         <div>
-          <p className="text-sm font-semibold text-white">{user?.displayName || user?.email}</p>
+          <p className="text-sm font-semibold text-ink">{user?.displayName || user?.email}</p>
           <p className="text-xs text-muted">{user?.email}</p>
         </div>
         <button onClick={() => signOut(getFirebaseAuth())} className="btn-outline text-xs">
@@ -45,7 +45,7 @@ function OrdersView() {
         </button>
       </div>
 
-      <h2 className="mt-8 font-display text-lg font-semibold text-white">Your Orders</h2>
+      <h2 className="mt-8 font-display text-lg font-semibold text-ink">Your Orders</h2>
       {orders.length === 0 ? (
         <p className="mt-3 text-sm text-muted">
           No orders yet.{" "}
@@ -60,11 +60,11 @@ function OrdersView() {
             <li
               key={o.id}
               className="rgb-box rounded-lg p-4"
-              style={{ ["--box-fill" as string]: "#0a0a0d" }}
+              style={{ ["--box-fill" as string]: "#ffffff" }}
             >
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-sm font-semibold text-white">
+                  <p className="text-sm font-semibold text-ink">
                     {o.tierName} <span className="font-normal text-muted">· {o.categoryLabel}</span>
                   </p>
                   <p className="mt-0.5 text-xs text-gold">{o.price}</p>

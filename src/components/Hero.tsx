@@ -9,7 +9,10 @@ const CHECKLIST = [
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-[560px] overflow-hidden lg:min-h-[680px]">
+    <section
+      id="home"
+      className="relative flex min-h-[480px] items-center overflow-hidden lg:min-h-[600px]"
+    >
       {/* Full-bleed artwork — spans the entire section width, not boxed or
           cropped to a card. Its own background is already near-black, so it
           blends straight into the page instead of sitting in a frame. */}
@@ -24,11 +27,11 @@ export default function Hero() {
         />
         {/* Legibility gradient: solid over the text on the left, fading out
             toward the emblem on the right so the artwork stays untouched. */}
-        <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/85 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#040711] via-[#040711]/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#040711] via-transparent to-transparent" />
       </div>
 
-      <div className="section relative flex min-h-[560px] items-center py-24 lg:min-h-[680px] lg:py-32">
+      <div className="section relative w-full">
         <div className="max-w-xl text-center lg:text-left">
           <p className="flex items-center justify-center gap-3 text-xs font-semibold tracking-[0.25em] text-gold lg:justify-start">
             <span aria-hidden className="h-px w-5 bg-gradient-to-r from-transparent to-gold" />
@@ -46,7 +49,7 @@ export default function Hero() {
             Creative Design. Clean Code. Real Results.
           </p>
 
-          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted lg:mx-0">
+          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/60 lg:mx-0">
             We help businesses, startups, and brands grow with creative
             design, modern websites, powerful mobile apps, and custom
             software solutions. Our focus is on delivering innovative

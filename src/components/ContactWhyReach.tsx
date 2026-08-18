@@ -40,8 +40,8 @@ const REASONS = [
 export default function ContactWhyReach() {
   return (
     <section className="section pt-0 text-center">
-      <div className="rgb-box rounded-xl px-8 py-12" style={{ ["--box-fill" as string]: "#0f0f13" }}>
-        <h2 className="font-display text-2xl font-semibold text-white sm:text-3xl">
+      <div className="rgb-box rounded-xl px-8 py-12" style={{ ["--box-fill" as string]: "#ffffff" }}>
+        <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
           Why Get <span className="text-gold">In Touch</span> With Us?
         </h2>
 

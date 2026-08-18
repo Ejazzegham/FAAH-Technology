@@ -218,7 +218,7 @@ export default function PrivacyPage() {
             LEGAL
             <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
           </p>
-          <h1 className="mt-3 text-center font-display text-3xl font-semibold text-white sm:text-4xl">
+          <h1 className="mt-3 text-center font-display text-3xl font-semibold text-ink sm:text-4xl">
             Privacy <span className="text-gold">Policy</span>
           </h1>
 

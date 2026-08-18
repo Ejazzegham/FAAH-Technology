@@ -39,7 +39,7 @@ export default function PricingFAQ() {
         FREQUENTLY ASKED QUESTIONS
         <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
       </p>
-      <h2 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+      <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
         Need Help? We&apos;ve Got Answers
       </h2>
 
@@ -50,11 +50,11 @@ export default function PricingFAQ() {
             <div
               key={faq.q}
               className="rgb-box rounded-lg"
-              style={{ ["--box-fill" as string]: "#0a0a0d" }}
+              style={{ ["--box-fill" as string]: "#ffffff" }}
             >
               <button
                 onClick={() => setOpen(isOpen ? null : i)}
-                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-medium text-white"
+                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-medium text-ink"
                 aria-expanded={isOpen}
               >
                 {faq.q}

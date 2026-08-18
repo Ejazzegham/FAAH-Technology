@@ -32,8 +32,8 @@ html::-webkit-scrollbar {
 }
 
 body {
-  background-color: #0a0a0d;
-  color: #f3f2ee;
+  background-color: #ffffff;
+  color: #0d0d10;
 }
 
 @layer components {
@@ -55,7 +55,7 @@ body {
   .btn-outline {
     @apply inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold text-gold transition-colors duration-200 hover:text-bg;
     border: 2px solid transparent;
-    background-image: linear-gradient(#0a0a0d, #0a0a0d),
+    background-image: linear-gradient(#ffffff, #ffffff),
       linear-gradient(rgba(20, 119, 245, 0.6), rgba(20, 119, 245, 0.6));
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -67,12 +67,13 @@ body {
   .card {
     @apply rounded-xl p-8 transition-all duration-300 hover:-translate-y-1;
     border: 2px solid transparent;
-    background-image: linear-gradient(#131318, #131318), linear-gradient(#232329, #232329);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#e6e6ea, #e6e6ea);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    box-shadow: 0 1px 3px rgba(13, 13, 16, 0.06), 0 1px 2px rgba(13, 13, 16, 0.04);
   }
   .card:hover {
-    background-image: linear-gradient(#131318, #131318),
+    background-image: linear-gradient(#ffffff, #ffffff),
       conic-gradient(from var(--border-angle), #ff3b3b, #ffe94f, #4dff6a, #4d9fff, #c14dff, #ff3b3b);
     animation: rgb-border-spin 3s linear infinite;
   }
@@ -81,10 +82,10 @@ body {
      to match the surface it sits on before using it. Border only lights
      up and starts spinning on hover/focus. */
   .rgb-box {
-    --box-fill: #131318;
+    --box-fill: #ffffff;
     border: 2px solid transparent;
     background-image: linear-gradient(var(--box-fill), var(--box-fill)),
-      linear-gradient(#232329, #232329);
+      linear-gradient(#e6e6ea, #e6e6ea);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     transition: background-image 0.15s linear;
@@ -171,7 +172,7 @@ body {
 
 .glow-card:hover,
 .glow-card:focus-within {
-  box-shadow: 0 0 32px -6px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 32px -6px rgba(20, 119, 245, 0.3);
 }
 
 .glow-card-inner {
@@ -180,7 +181,7 @@ body {
   margin: 2px;
   border-radius: 16px;
   overflow: hidden;
-  background: #131318;
+  background: #ffffff;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -231,7 +232,7 @@ body {
 
 .portfolio-card:hover,
 .portfolio-card:focus-within {
-  box-shadow: 0 0 32px -6px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 32px -6px rgba(20, 119, 245, 0.3);
 }
 
 .portfolio-card-inner {
@@ -240,7 +241,7 @@ body {
   margin: 2px;
   border-radius: 0 10px;
   overflow: hidden;
-  background: #131318;
+  background: #ffffff;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -278,7 +279,7 @@ body {
 }
 .rgb-text:hover,
 .rgb-text:focus-visible {
-  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.45))
+  filter: drop-shadow(0 0 14px rgba(13, 13, 16, 0.25))
     drop-shadow(0 0 34px rgba(20, 119, 245, 0.45))
     drop-shadow(0 0 58px rgba(193, 77, 255, 0.25));
 }

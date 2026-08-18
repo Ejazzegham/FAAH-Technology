@@ -55,18 +55,18 @@ export default function Testimonials() {
             TESTIMONIALS
             <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
           </p>
-          <h2 className="mt-3 font-display text-2xl font-semibold text-white">
+          <h2 className="mt-3 font-display text-2xl font-semibold text-ink">
             What {featuredFirstName} Says
           </h2>
           <p className="mt-6 font-display text-3xl text-gold">&ldquo;</p>
-          <p className="text-sm leading-relaxed text-white/85">{featured.text}</p>
+          <p className="text-sm leading-relaxed text-ink/85">{featured.text}</p>
         </div>
         <div className="mt-8 flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/20 text-sm font-semibold text-gold">
             {featured.name.charAt(0)}
           </div>
           <div>
-            <p className="text-sm font-semibold text-white">{featured.name}</p>
+            <p className="text-sm font-semibold text-ink">{featured.name}</p>
             <Stars count={featured.rating} />
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Testimonials() {
               CLIENT REVIEWS
               <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold text-white">
+            <h2 className="mt-3 font-display text-2xl font-semibold text-ink">
               Our Clients Love Our Work
             </h2>
           </div>
@@ -111,14 +111,14 @@ export default function Testimonials() {
 
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
           {visible.map((r) => (
-            <div key={r.id} className="rgb-box rounded-lg p-5" style={{ ["--box-fill" as string]: "#131318" }}>
+            <div key={r.id} className="rgb-box rounded-lg p-5" style={{ ["--box-fill" as string]: "#ffffff" }}>
               <Stars count={r.rating} />
               <p className="mt-3 text-xs leading-relaxed text-muted">&ldquo;{r.text}&rdquo;</p>
               <div className="mt-4 flex items-center gap-2">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/20 text-xs font-semibold text-gold">
                   {r.name.charAt(0)}
                 </div>
-                <p className="text-xs font-semibold text-white">{r.name}</p>
+                <p className="text-xs font-semibold text-ink">{r.name}</p>
               </div>
             </div>
           ))}

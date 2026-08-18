@@ -314,7 +314,7 @@ export default function TermsPage() {
             LEGAL
             <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
           </p>
-          <h1 className="mt-3 text-center font-display text-3xl font-semibold text-white sm:text-4xl">
+          <h1 className="mt-3 text-center font-display text-3xl font-semibold text-ink sm:text-4xl">
             Terms of <span className="text-gold">Service</span>
           </h1>
 
@@ -337,7 +337,7 @@ export default function TermsPage() {
                     read, understood, and agree to these Terms of Service.
                     <br />
                     <br />
-                    <strong className="text-white">Our Commitment</strong> — At FAAH Technology, we are committed to
+                    <strong className="text-ink">Our Commitment</strong> — At FAAH Technology, we are committed to
                     delivering high-quality Graphic Design, Website Development, Mobile App Development, and
                     Custom Desktop Software Development services with professionalism, transparency, and
                     long-term client support. We value clear communication, fair business practices, and building

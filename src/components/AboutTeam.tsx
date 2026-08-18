@@ -20,7 +20,7 @@ export default function AboutTeam() {
         OUR TEAM
         <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
       </p>
-      <h2 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+      <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
         Meet The Minds Behind FAAH Technology
       </h2>
 
@@ -29,7 +29,7 @@ export default function AboutTeam() {
           <div
             key={member.id}
             className="rgb-box overflow-hidden rounded-xl transition-transform duration-300 hover:-translate-y-1"
-            style={{ ["--box-fill" as string]: "#131318" }}
+            style={{ ["--box-fill" as string]: "#ffffff" }}
           >
             <div className="flex aspect-square items-center justify-center bg-gradient-to-br from-bg-card to-bg text-4xl font-display font-semibold text-gold/30">
               {member.imageUrl ? (

@@ -35,7 +35,7 @@ export default function About() {
             ABOUT ME
             <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
           </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold leading-snug text-white sm:text-4xl">
+          <h2 className="mt-3 font-display text-3xl font-semibold leading-snug text-ink sm:text-4xl">
             Passionate about design and code.
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-muted">
@@ -47,7 +47,7 @@ export default function About() {
 
           <ul className="mt-8 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
             {HIGHLIGHTS.map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-white/90">
+              <li key={item} className="flex items-center gap-2 text-sm text-ink/90">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="shrink-0 text-gold">
                   <circle cx="12" cy="12" r="10" fill="currentColor" fillOpacity="0.15" />
                   <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />

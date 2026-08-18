@@ -65,7 +65,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
             <div className="flex justify-center">
               <Link
                 href="/portfolio"
-                className="group inline-flex items-center gap-2 rounded-full border border-line/80 bg-bg/80 px-4 py-2 text-xs font-semibold text-white/90 backdrop-blur-sm transition-all duration-200 hover:border-gold/60 hover:bg-gold/10 hover:text-gold"
+                className="group inline-flex items-center gap-2 rounded-full border border-line/80 bg-bg/80 px-4 py-2 text-xs font-semibold text-ink/90 backdrop-blur-sm transition-all duration-200 hover:border-gold/60 hover:bg-gold/10 hover:text-gold"
               >
                 <svg
                   width="14"

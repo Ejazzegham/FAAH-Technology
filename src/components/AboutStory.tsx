@@ -18,7 +18,7 @@ export default function AboutStory() {
           WHO WE ARE
           <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
         </p>
-        <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-white sm:text-3xl">
+        <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-ink sm:text-3xl">
           About <span className="text-gold">FAAH Technology</span>
         </h2>
       </div>
@@ -26,13 +26,13 @@ export default function AboutStory() {
       <div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-12">
         {/* Core Values — left column */}
         <div className="rgb-box flex flex-col rounded-2xl p-8 lg:p-10"
-          style={{ ["--box-fill" as string]: "#0e0e11" }}>
+          style={{ ["--box-fill" as string]: "#ffffff" }}>
           <p className="flex items-center gap-3 text-xs font-semibold tracking-[0.25em] text-gold">
             <span aria-hidden className="h-px w-5 bg-gradient-to-r from-transparent to-gold" />
             CORE VALUES
             <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
           </p>
-          <h3 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+          <h3 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
             What We <span className="text-gold">Stand For</span>
           </h3>
 
@@ -40,8 +40,8 @@ export default function AboutStory() {
             {CORE_VALUES.map((value) => (
               <li
                 key={value}
-                className="rgb-box flex items-center gap-3 rounded-lg px-4 py-3 text-sm text-white/90"
-                style={{ ["--box-fill" as string]: "#131318" }}
+                className="rgb-box flex items-center gap-3 rounded-lg px-4 py-3 text-sm text-ink/90"
+                style={{ ["--box-fill" as string]: "#ffffff" }}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="shrink-0 text-gold">
                   <circle cx="12" cy="12" r="10" fill="currentColor" fillOpacity="0.15" />
@@ -61,8 +61,8 @@ export default function AboutStory() {
 
         {/* About paragraph — right column */}
         <div className="rgb-box flex flex-col rounded-2xl p-8 lg:p-10"
-          style={{ ["--box-fill" as string]: "#0e0e11" }}>
-          <h3 className="font-display text-2xl font-semibold text-white sm:text-3xl">
+          style={{ ["--box-fill" as string]: "#ffffff" }}>
+          <h3 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
             About <span className="text-gold">Us</span>
           </h3>
 

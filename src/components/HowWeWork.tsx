@@ -39,7 +39,7 @@ export default function HowWeWork() {
         OUR PROCESS
         <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
       </p>
-      <h2 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+      <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
         How We Work
       </h2>
 
@@ -68,7 +68,7 @@ export default function HowWeWork() {
               </span>
             </span>
             <div>
-              <p className="text-sm font-semibold text-white">{step.title}</p>
+              <p className="text-sm font-semibold text-ink">{step.title}</p>
               <p className="mx-auto mt-1 max-w-[9rem] text-[11px] leading-snug text-muted">
                 {step.desc}
               </p>

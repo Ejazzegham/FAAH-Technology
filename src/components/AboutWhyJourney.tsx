@@ -98,7 +98,7 @@ export default function AboutWhyJourney() {
           WHY CHOOSE US
           <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
         </p>
-        <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-white sm:text-3xl">
+        <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-ink sm:text-3xl">
           We Build Solutions, <span className="text-gold">We Build Trust.</span>
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted">
@@ -128,7 +128,7 @@ export default function AboutWhyJourney() {
           OUR JOURNEY
           <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
         </p>
-        <h2 className="mt-3 text-center font-display text-2xl font-semibold text-white sm:text-3xl">
+        <h2 className="mt-3 text-center font-display text-2xl font-semibold text-ink sm:text-3xl">
           A Decade &amp; Beyond, Since 2010
         </h2>
 
@@ -166,10 +166,10 @@ export default function AboutWhyJourney() {
 
                 <div
                   className="rgb-box w-full rounded-xl px-5 py-5 lg:py-6"
-                  style={{ ["--box-fill" as string]: "#131318" }}
+                  style={{ ["--box-fill" as string]: "#ffffff" }}
                 >
                   <p className="font-display text-xl font-bold text-gold">{step.year}</p>
-                  <p className="mt-1 text-sm font-semibold text-white">{step.title}</p>
+                  <p className="mt-1 text-sm font-semibold text-ink">{step.title}</p>
                   <p className="mt-2 text-xs leading-relaxed text-muted">{step.text}</p>
                 </div>
               </div>

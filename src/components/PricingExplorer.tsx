@@ -133,9 +133,9 @@ export default function PricingExplorer() {
       <div className="section pb-0 pt-0">
         <div
           className="rgb-box w-full rounded-xl px-6 py-10 sm:px-12 lg:px-16"
-          style={{ ["--box-fill" as string]: "#0f0f13" }}
+          style={{ ["--box-fill" as string]: "#ffffff" }}
         >
-          <h2 className="font-display text-2xl font-semibold text-white sm:text-3xl">
+          <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
             Pricing Built Around <span className="text-gold">Your Business Growth</span>
           </h2>
           <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted sm:text-base">
@@ -168,7 +168,7 @@ export default function PricingExplorer() {
 
       {/* Level 1 — the 4 main service cards */}
       <div className="section pt-8">
-        <h3 className="text-center font-display text-2xl font-semibold text-white sm:text-3xl">
+        <h3 className="text-center font-display text-2xl font-semibold text-ink sm:text-3xl">
           Our <span className="text-gold">Services</span>
         </h3>
         <p className="mx-auto mt-3 max-w-xl text-center text-sm leading-relaxed text-muted">
@@ -185,11 +185,11 @@ export default function PricingExplorer() {
                   isActive ? "shadow-gold" : ""
                 }`}
                 style={{
-                  ["--box-fill" as string]: "#0f0f13",
+                  ["--box-fill" as string]: "#ffffff",
                   ...(isActive
                     ? {
                         backgroundImage:
-                          "linear-gradient(#0f0f13,#0f0f13), linear-gradient(#1477f5,#1477f5)",
+                          "linear-gradient(#ffffff,#ffffff), linear-gradient(#1477f5,#1477f5)",
                       }
                     : {}),
                 }}
@@ -231,7 +231,7 @@ export default function PricingExplorer() {
                   className={`flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-semibold transition-colors ${
                     isActive
                       ? "border-gold bg-gold-gradient text-bg"
-                      : "border-line text-muted hover:text-white"
+                      : "border-line text-muted hover:text-ink"
                   }`}
                 >
                   <Icon name={sub.icon} size={14} />
@@ -245,7 +245,7 @@ export default function PricingExplorer() {
             <span className="text-gold">
               <Icon name={selectedSub.icon} size={22} />
             </span>
-            <span className="font-display text-2xl font-semibold text-white sm:text-3xl">
+            <span className="font-display text-2xl font-semibold text-ink sm:text-3xl">
               {selectedSub.label} <span className="text-gold">Packages</span>
             </span>
           </p>
@@ -262,11 +262,11 @@ export default function PricingExplorer() {
                   tier.highlighted ? "shadow-gold" : ""
                 }`}
                 style={{
-                  ["--box-fill" as string]: "#131318",
+                  ["--box-fill" as string]: "#ffffff",
                   ...(tier.highlighted
                     ? {
                         backgroundImage:
-                          "linear-gradient(#131318,#131318), linear-gradient(#1477f5,#1477f5)",
+                          "linear-gradient(#ffffff,#ffffff), linear-gradient(#1477f5,#1477f5)",
                       }
                     : {}),
                 }}
@@ -277,7 +277,7 @@ export default function PricingExplorer() {
                   </span>
                 )}
                 <div className="text-center">
-                  <h3 className="font-display text-base font-semibold text-white">{tier.name}</h3>
+                  <h3 className="font-display text-base font-semibold text-ink">{tier.name}</h3>
                   <div className="mt-2">
                     <Stars count={tier.stars} />
                   </div>

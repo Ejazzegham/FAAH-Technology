@@ -26,7 +26,7 @@ const STATS = [
 export default function PortfolioStatsCta() {
   return (
     <div className="section pt-0">
-      <div className="rgb-box grid grid-cols-2 gap-8 rounded-xl px-8 py-10 sm:grid-cols-4" style={{ ["--box-fill" as string]: "#0a0a0d" }}>
+      <div className="rgb-box grid grid-cols-2 gap-8 rounded-xl px-8 py-10 sm:grid-cols-4" style={{ ["--box-fill" as string]: "#ffffff" }}>
         {STATS.map((stat) => (
           <div key={stat.label} className="flex items-center gap-3">
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold">
@@ -35,14 +35,14 @@ export default function PortfolioStatsCta() {
               </svg>
             </span>
             <div>
-              <p className="font-display text-xl font-bold text-white">{stat.value}</p>
+              <p className="font-display text-xl font-bold text-ink">{stat.value}</p>
               <p className="text-[10px] font-medium tracking-wide text-muted">{stat.label}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="rgb-box relative mt-8 flex flex-col items-center justify-between gap-6 overflow-hidden rounded-xl px-8 py-10 sm:flex-row" style={{ ["--box-fill" as string]: "#0a0a0d" }}>
+      <div className="rgb-box relative mt-8 flex flex-col items-center justify-between gap-6 overflow-hidden rounded-xl px-8 py-10 sm:flex-row" style={{ ["--box-fill" as string]: "#ffffff" }}>
         <div
           aria-hidden
           className="pointer-events-none absolute -left-16 -top-16 h-48 w-48 rounded-full bg-gold/10 blur-3xl"
@@ -52,7 +52,7 @@ export default function PortfolioStatsCta() {
           className="pointer-events-none absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-gold/10 blur-3xl"
         />
         <div className="relative">
-          <h3 className="font-display text-2xl font-semibold text-white">
+          <h3 className="font-display text-2xl font-semibold text-ink">
             Have a Project in Mind? <span className="text-gold">Let&apos;s Talk.</span>
           </h3>
           <p className="mt-2 text-sm text-muted">

@@ -46,7 +46,7 @@ export default function PricingTrustBar() {
     <div className="section pt-0">
       <div
         className="rgb-box flex flex-wrap items-center justify-center gap-x-10 gap-y-6 rounded-xl px-8 py-6"
-        style={{ ["--box-fill" as string]: "#0f0f13" }}
+        style={{ ["--box-fill" as string]: "#ffffff" }}
       >
         {BADGES.map((b) => (
           <div key={b.title} className="flex items-center gap-3">
@@ -65,7 +65,7 @@ export default function PricingTrustBar() {
               </svg>
             </span>
             <div>
-              <p className="text-xs font-semibold text-white">{b.title}</p>
+              <p className="text-xs font-semibold text-ink">{b.title}</p>
               <p className="text-[11px] text-muted">{b.desc}</p>
             </div>
           </div>

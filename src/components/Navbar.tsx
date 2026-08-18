@@ -186,7 +186,7 @@ function ServicesDesktopDropdown({ active }: { active: boolean }) {
                 key={service.label}
                 href={service.href}
                 onClick={() => setOpen(false)}
-                className="flex items-center gap-2.5 border-b border-line px-3 py-2.5 text-[13px] text-white/90 transition-colors last:border-b-0 hover:bg-gold/10 hover:text-gold"
+                className="flex items-center gap-2.5 border-b border-line px-3 py-2.5 text-[13px] text-ink/90 transition-colors last:border-b-0 hover:bg-gold/10 hover:text-gold"
               >
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center text-gold">
                   <NavLinkIcon>{service.icon}</NavLinkIcon>
@@ -245,7 +245,7 @@ export default function Navbar({ active = "Home" }: { active?: string }) {
             className="h-10 w-10 object-contain"
             priority
           />
-          <span className="font-display text-sm font-semibold leading-tight tracking-wide text-white">
+          <span className="font-display text-sm font-semibold leading-tight tracking-wide text-ink">
             FAAH
             <span className="block text-[10px] font-medium tracking-[0.3em] text-muted">
               TECHNOLOGY
@@ -332,7 +332,7 @@ export default function Navbar({ active = "Home" }: { active?: string }) {
                   height={32}
                   className="h-8 w-8 object-contain"
                 />
-                <span className="font-display text-sm font-semibold text-white">
+                <span className="font-display text-sm font-semibold text-ink">
                   FAAH
                   <span className="block text-[9px] font-medium tracking-[0.3em] text-muted">
                     TECHNOLOGY
@@ -358,7 +358,7 @@ export default function Navbar({ active = "Home" }: { active?: string }) {
                 className={`mobile-nav-item flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-semibold transition-colors ${
                   HOME_LINK.label === active
                     ? "bg-gold/10 text-gold"
-                    : "text-muted hover:bg-white/5 hover:text-white"
+                    : "text-muted hover:bg-black/5 hover:text-ink"
                 }`}
               >
                 <NavLinkIcon>{HOME_LINK.icon}</NavLinkIcon>
@@ -374,7 +374,7 @@ export default function Navbar({ active = "Home" }: { active?: string }) {
                   className={`flex w-full items-center gap-3 rounded-lg px-4 py-3 text-sm font-semibold transition-colors ${
                     isServicesActive
                       ? "bg-gold/10 text-gold"
-                      : "text-muted hover:bg-white/5 hover:text-white"
+                      : "text-muted hover:bg-black/5 hover:text-ink"
                   }`}
                 >
                   <NavLinkIcon>
@@ -405,7 +405,7 @@ export default function Navbar({ active = "Home" }: { active?: string }) {
                         key={service.label}
                         href={service.href}
                         onClick={() => setOpen(false)}
-                        className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-muted transition-colors hover:bg-white/5 hover:text-white"
+                        className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-muted transition-colors hover:bg-black/5 hover:text-ink"
                       >
                         <NavLinkIcon>{service.icon}</NavLinkIcon>
                         <span>{service.label}</span>
@@ -426,7 +426,7 @@ export default function Navbar({ active = "Home" }: { active?: string }) {
                     className={`mobile-nav-item flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-semibold transition-colors ${
                       isActive
                         ? "bg-gold/10 text-gold"
-                        : "text-muted hover:bg-white/5 hover:text-white"
+                        : "text-muted hover:bg-black/5 hover:text-ink"
                     }`}
                   >
                     <NavLinkIcon>{link.icon}</NavLinkIcon>
@@ -447,7 +447,7 @@ export default function Navbar({ active = "Home" }: { active?: string }) {
                 onClick={() => setOpen(false)}
                 style={{ animationDelay: `${0.25 + NAV_LINKS.length * 0.05}s` }}
                 className={`mobile-nav-item flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-semibold transition-colors ${
-                  active === "Account" ? "bg-gold/10 text-gold" : "text-muted hover:bg-white/5 hover:text-white"
+                  active === "Account" ? "bg-gold/10 text-gold" : "text-muted hover:bg-black/5 hover:text-ink"
                 }`}
               >
                 <NavLinkIcon>

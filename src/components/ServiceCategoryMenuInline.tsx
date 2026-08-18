@@ -80,7 +80,7 @@ export default function ServiceCategoryMenu({
           {eyebrow}
           <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
         </p>
-        <h2 className="mt-3 font-display text-3xl font-semibold text-white sm:text-4xl">
+        <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
           {heading}
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted">
@@ -97,16 +97,16 @@ export default function ServiceCategoryMenu({
                 type="button"
                 onClick={() => setActive(isActive ? null : i)}
                 aria-expanded={isActive}
-                style={{ ["--box-fill" as string]: isActive ? "#1a130c" : "#131318" }}
+                style={{ ["--box-fill" as string]: isActive ? "#eaf2ff" : "#ffffff" }}
                 className={`rgb-box group relative flex flex-col items-center gap-3 rounded-xl px-4 py-6 text-center transition-colors duration-200 ${
-                  isActive ? "text-gold" : "text-muted hover:text-white"
+                  isActive ? "text-gold" : "text-muted hover:text-ink"
                 }`}
               >
                 <span
                   className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border transition-colors ${
                     isActive
                       ? "border-gold/60 text-gold"
-                      : "border-line text-muted group-hover:border-gold/40 group-hover:text-white"
+                      : "border-line text-muted group-hover:border-gold/40 group-hover:text-ink"
                   }`}
                 >
                   <svg
@@ -129,7 +129,7 @@ export default function ServiceCategoryMenu({
 
                 <span
                   className={`rounded-full px-2.5 py-0.5 text-[10px] font-semibold ${
-                    isActive ? "bg-gold/20 text-gold" : "bg-white/5 text-muted"
+                    isActive ? "bg-gold/20 text-gold" : "bg-black/5 text-muted"
                   }`}
                 >
                   {cat.items.length} services
@@ -146,7 +146,7 @@ export default function ServiceCategoryMenu({
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={`absolute right-3 top-3 text-muted transition-transform duration-200 ${
-                    isActive ? "rotate-180 text-gold" : "group-hover:text-white"
+                    isActive ? "rotate-180 text-gold" : "group-hover:text-ink"
                   }`}
                 >
                   <path d="M6 9l6 6 6-6" />
@@ -178,7 +178,7 @@ export default function ServiceCategoryMenu({
                           </svg>
                         </span>
                         <div>
-                          <h3 className="font-display text-xl font-semibold text-white">
+                          <h3 className="font-display text-xl font-semibold text-ink">
                             {categories[active].title}
                           </h3>
                           <p className="text-xs text-muted">
@@ -211,12 +211,12 @@ export default function ServiceCategoryMenu({
                           <div
                             key={item}
                             className="rgb-box flex items-center gap-3 rounded-lg px-4 py-3.5"
-                            style={{ ["--box-fill" as string]: "#0a0a0d" }}
+                            style={{ ["--box-fill" as string]: "#ffffff" }}
                           >
                             <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-gold/40 font-display text-[11px] font-semibold text-gold">
                               {String(idx + 1).padStart(2, "0")}
                             </span>
-                            <p className="text-sm font-medium leading-snug text-white/90">
+                            <p className="text-sm font-medium leading-snug text-ink/90">
                               {item}
                             </p>
                           </div>

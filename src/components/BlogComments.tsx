@@ -37,7 +37,7 @@ export default function BlogComments({ postId }: { postId: string }) {
 
   return (
     <section className="mt-16 border-t border-line pt-10">
-      <h2 className="font-display text-xl font-semibold text-white">
+      <h2 className="font-display text-xl font-semibold text-ink">
         Comments {comments.length > 0 && <span className="text-muted">({comments.length})</span>}
       </h2>
 
@@ -47,7 +47,7 @@ export default function BlogComments({ postId }: { postId: string }) {
             <li
               key={c.id}
               className="rgb-box rounded-lg p-4"
-              style={{ ["--box-fill" as string]: "#0a0a0d" }}
+              style={{ ["--box-fill" as string]: "#ffffff" }}
             >
               <p className="text-sm font-semibold text-gold">{c.name}</p>
               <p className="mt-1 text-xs text-muted">{c.comment}</p>
@@ -58,9 +58,9 @@ export default function BlogComments({ postId }: { postId: string }) {
 
       <div
         className="rgb-box mt-8 rounded-xl p-6"
-        style={{ ["--box-fill" as string]: "#0a0a0d" }}
+        style={{ ["--box-fill" as string]: "#ffffff" }}
       >
-        <h3 className="text-sm font-semibold text-white">Leave a comment</h3>
+        <h3 className="text-sm font-semibold text-ink">Leave a comment</h3>
         <p className="mt-1 text-xs text-muted">
           Comments are reviewed before they appear publicly.
         </p>
@@ -77,14 +77,14 @@ export default function BlogComments({ postId }: { postId: string }) {
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded-md border border-line bg-bg px-3 py-2 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none"
+                className="w-full rounded-md border border-line bg-bg px-3 py-2 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Your Email (optional)"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-md border border-line bg-bg px-3 py-2 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none"
+                className="w-full rounded-md border border-line bg-bg px-3 py-2 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none"
               />
             </div>
             <textarea
@@ -93,7 +93,7 @@ export default function BlogComments({ postId }: { postId: string }) {
               placeholder="Your comment"
               value={comment}
               onChange={(e) => setComment(e.target.value)}
-              className="w-full rounded-md border border-line bg-bg px-3 py-2 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none"
+              className="w-full rounded-md border border-line bg-bg px-3 py-2 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none"
             />
             {error && <p className="text-xs text-rose-400">{error}</p>}
             <button type="submit" disabled={sending} className="btn-primary disabled:opacity-60">

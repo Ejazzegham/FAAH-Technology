@@ -12,7 +12,7 @@ export type LegalSection = {
 
 function Block({ block }: { block: LegalBlock }) {
   if (block.type === "sub") {
-    return <p className="mt-4 text-sm font-semibold text-white">{block.text}</p>;
+    return <p className="mt-4 text-sm font-semibold text-ink">{block.text}</p>;
   }
   if (block.type === "ul") {
     return (
@@ -61,7 +61,7 @@ export default function LegalContent({
 
       {closing && (
         <div className="mt-12 rounded-xl border border-gold/30 bg-gold/5 p-6">
-          <h2 className="font-display text-base font-semibold text-white">{closing.heading}</h2>
+          <h2 className="font-display text-base font-semibold text-ink">{closing.heading}</h2>
           <p className="mt-3 text-sm leading-relaxed text-muted">{closing.text}</p>
         </div>
       )}

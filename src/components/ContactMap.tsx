@@ -34,16 +34,16 @@ export default function ContactMap() {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-12">
         {/* Let's Talk / Contact Us — left column */}
         <div className="rgb-box flex flex-col rounded-2xl p-8 lg:p-10"
-          style={{ ["--box-fill" as string]: "#0e0e11" }}>
+          style={{ ["--box-fill" as string]: "#ffffff" }}>
           <p className="flex items-center gap-3 text-xs font-semibold tracking-[0.25em] text-gold">
             <span aria-hidden className="h-px w-5 bg-gradient-to-r from-transparent to-gold" />
             LET&apos;S TALK
             <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
           </p>
-          <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-white sm:text-3xl">
+          <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-ink sm:text-3xl">
             Contact <span className="text-gold">Us</span>
           </h2>
-          <p className="mt-4 font-display text-lg font-semibold text-white/90 sm:text-xl">
+          <p className="mt-4 font-display text-lg font-semibold text-ink/90 sm:text-xl">
             Let&apos;s Build Something Exceptional Together
           </p>
 
@@ -84,13 +84,13 @@ export default function ContactMap() {
         {/* Our Location + map — right column, stacked */}
         <div className="flex flex-col gap-8">
           <div className="rgb-box flex flex-col rounded-2xl p-8 lg:p-10"
-          style={{ ["--box-fill" as string]: "#0e0e11" }}>
+          style={{ ["--box-fill" as string]: "#ffffff" }}>
             <p className="flex items-center gap-3 text-xs font-semibold tracking-[0.25em] text-gold">
               <span aria-hidden className="h-px w-5 bg-gradient-to-r from-transparent to-gold" />
               OUR LOCATION
               <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
               Visit Our Office
               <br />
               We&apos;d Love to <span className="text-gold">Meet You</span>
@@ -164,7 +164,7 @@ export default function ContactMap() {
                 />
                 <circle cx="12" cy="10" r="2.4" fill="currentColor" />
               </svg>
-              <span className="mt-1 rounded bg-bg/80 px-2 py-0.5 text-xs font-semibold text-white">
+              <span className="mt-1 rounded bg-bg/80 px-2 py-0.5 text-xs font-semibold text-ink">
                 {pinLabel}
               </span>
             </div>

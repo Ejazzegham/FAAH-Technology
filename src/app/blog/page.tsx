@@ -31,7 +31,7 @@ export default async function BlogPage() {
               FEATURED ARTICLES
               <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
               Latest <span className="text-gold">Articles</span>
             </h2>
           </div>
@@ -54,7 +54,7 @@ export default async function BlogPage() {
                           className="object-cover transition-transform group-hover:scale-105"
                         />
                       ) : (
-                        <div className="flex h-full items-center justify-center text-white/20">
+                        <div className="flex h-full items-center justify-center text-ink/20">
                           <span className="font-display text-sm">FAAH Technology</span>
                         </div>
                       )}

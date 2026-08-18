@@ -90,7 +90,7 @@ export default function ContactHeroForm() {
           CONTACT INFORMATION
           <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
         </p>
-        <h2 className="mt-3 font-display text-2xl font-semibold leading-tight text-white sm:text-3xl">
+        <h2 className="mt-3 font-display text-2xl font-semibold leading-tight text-ink sm:text-3xl">
           Reach Us <span className="text-gold">Directly</span>
         </h2>
         <p className="mt-5 max-w-lg text-sm leading-relaxed text-muted">
@@ -126,7 +126,7 @@ export default function ContactHeroForm() {
         <WhatsAppButton className="mt-8" />
       </div>
 
-      <div className="rgb-box flex flex-col rounded-xl p-8 lg:order-1" style={{ ["--box-fill" as string]: "#0a0a0d" }}>
+      <div className="rgb-box flex flex-col rounded-xl p-8 lg:order-1" style={{ ["--box-fill" as string]: "#ffffff" }}>
         <div className="flex items-center gap-3">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold">
             <svg
@@ -143,7 +143,7 @@ export default function ContactHeroForm() {
             </svg>
           </span>
           <div>
-            <h2 className="font-display text-lg font-semibold text-white">Send Us a Message</h2>
+            <h2 className="font-display text-lg font-semibold text-ink">Send Us a Message</h2>
             <p className="text-xs text-muted">
               We&apos;re here to help and answer any question you might have.
             </p>
@@ -166,7 +166,7 @@ export default function ContactHeroForm() {
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none"
+                className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none"
               />
               <input
                 type="email"
@@ -174,7 +174,7 @@ export default function ContactHeroForm() {
                 placeholder="Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none"
+                className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none"
               />
             </div>
             <input
@@ -183,7 +183,7 @@ export default function ContactHeroForm() {
               placeholder="Your Subject"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none"
+              className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none"
             />
             <textarea
               required
@@ -191,7 +191,7 @@ export default function ContactHeroForm() {
               placeholder="Your Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none"
+              className="w-full rounded-md border border-line bg-bg px-4 py-3 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none"
             />
             {error && <p className="text-xs text-rose-400">{error}</p>}
             <button type="submit" disabled={sending} className="btn-primary w-full justify-center disabled:opacity-60">

@@ -8,7 +8,7 @@ export default function BlogDiscover() {
             WHY READ OUR BLOG?
             <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
           </p>
-          <h2 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+          <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
             Insights Worth <span className="text-gold">Your Time</span>
           </h2>
           <p className="mt-5 text-sm leading-relaxed text-muted">

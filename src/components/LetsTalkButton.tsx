@@ -96,7 +96,7 @@ export default function LetsTalkButton({
             <Link
               href="/contact"
               onClick={close}
-              className="flex items-center gap-3 px-4 py-3 text-left text-sm text-white/90 transition-colors hover:bg-gold/10 hover:text-gold"
+              className="flex items-center gap-3 px-4 py-3 text-left text-sm text-ink/90 transition-colors hover:bg-gold/10 hover:text-gold"
             >
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -114,7 +114,7 @@ export default function LetsTalkButton({
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}
-              className="flex items-center gap-3 border-t border-line px-4 py-3 text-left text-sm text-white/90 transition-colors hover:bg-[#25D366]/10 hover:text-[#25D366]"
+              className="flex items-center gap-3 border-t border-line px-4 py-3 text-left text-sm text-ink/90 transition-colors hover:bg-[#25D366]/10 hover:text-[#25D366]"
             >
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#25D366]/50 text-[#25D366]">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">

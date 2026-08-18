@@ -9,17 +9,18 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: "#0a0a0d",
-          soft: "#0f0f13",
-          card: "#131318",
+          DEFAULT: "#ffffff",
+          soft: "#f5f6f8",
+          card: "#ffffff",
         },
         gold: {
           DEFAULT: "#1477f5",
           light: "#5b9dff",
           dark: "#0a3fc4",
         },
-        line: "#232329",
-        muted: "#9a9aa3",
+        line: "#e6e6ea",
+        muted: "#5b5b66",
+        ink: "#0d0d10",
       },
       fontFamily: {
         display: ["var(--font-display)", "sans-serif"],

@@ -70,7 +70,7 @@ export default function Footer() {
               height={36}
               className="h-9 w-9 object-contain"
             />
-            <span className="font-display text-sm font-semibold text-white">
+            <span className="font-display text-sm font-semibold text-ink">
               FAAH TECHNOLOGY
             </span>
           </div>
@@ -150,7 +150,7 @@ export default function Footer() {
                 placeholder="Your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-md border border-line bg-bg px-3 py-2 text-xs text-white placeholder:text-muted focus:border-gold focus:outline-none"
+                className="w-full rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink placeholder:text-muted focus:border-gold focus:outline-none"
               />
               <button type="submit" disabled={status === "sending"} className="btn-primary !px-4 !py-2 !text-xs disabled:opacity-60">
                 {status === "sending" ? "…" : "SUBSCRIBE"}

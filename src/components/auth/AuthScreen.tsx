@@ -32,9 +32,9 @@ const SWITCH_MS = 320;
 const SLIDE_DISTANCE = 40; // px the card travels during each half
 
 const fieldClass =
-  "w-full rounded-[8px] border border-line bg-bg py-2.5 pl-10 pr-3 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none";
+  "w-full rounded-[8px] border border-line bg-bg py-2.5 pl-10 pr-3 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none";
 const fieldWithToggleClass =
-  "w-full rounded-[8px] border border-line bg-bg py-2.5 pl-10 pr-10 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none";
+  "w-full rounded-[8px] border border-line bg-bg py-2.5 pl-10 pr-10 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none";
 
 function friendlyError(err: unknown, providerLabel?: string): string {
   const code = (err as { code?: string })?.code ?? "";
@@ -255,7 +255,7 @@ export default function AuthScreen() {
                 className="mx-auto w-44 drop-shadow-[0_0_60px_rgba(20,119,245,0.35)]"
                 priority
               />
-              <h2 className="mt-6 font-display text-2xl font-semibold text-white">
+              <h2 className="mt-6 font-display text-2xl font-semibold text-ink">
                 {mode === "signup" ? "Join FAAH Technology" : mode === "forgot" ? "Forgot your password?" : "Welcome Back"}
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-muted">
@@ -267,7 +267,7 @@ export default function AuthScreen() {
               </p>
               <ul className="mt-8 space-y-3 text-left">
                 {FEATURES.map((f) => (
-                  <li key={f} className="flex items-center gap-3 text-sm text-white/90">
+                  <li key={f} className="flex items-center gap-3 text-sm text-ink/90">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-gold" /> {f}
                   </li>
                 ))}
@@ -291,7 +291,7 @@ export default function AuthScreen() {
                   height={40}
                   className="h-10 w-10 object-contain"
                 />
-                <span className="font-display text-sm font-semibold leading-tight tracking-wide text-white">
+                <span className="font-display text-sm font-semibold leading-tight tracking-wide text-ink">
                   FAAH
                   <span className="block text-[10px] font-medium tracking-[0.3em] text-muted">TECHNOLOGY</span>
                 </span>
@@ -300,7 +300,7 @@ export default function AuthScreen() {
               <div key={mode} className="auth-fade-in">
                 {mode !== "forgot" ? (
                   <>
-                    <h1 className="font-display text-2xl font-semibold text-white">
+                    <h1 className="font-display text-2xl font-semibold text-ink">
                       {mode === "signin" ? "Sign In" : "Create Your Account"}
                     </h1>
                     <p className="mt-2 text-sm text-muted">
@@ -469,7 +469,7 @@ export default function AuthScreen() {
                     >
                       <ArrowLeft className="h-3.5 w-3.5" /> Back to sign in
                     </button>
-                    <h1 className="font-display text-2xl font-semibold text-white">Reset your password</h1>
+                    <h1 className="font-display text-2xl font-semibold text-ink">Reset your password</h1>
                     <p className="mt-2 text-sm text-muted">
                       Enter the email linked to your account and we&apos;ll send you a reset link.
                     </p>

@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
               ))}
             </div>
           )}
-          <h1 className="mt-4 font-display text-3xl font-semibold text-white sm:text-4xl">
+          <h1 className="mt-4 font-display text-3xl font-semibold text-ink sm:text-4xl">
             {post.title}
           </h1>
           <p className="mt-3 text-xs text-muted">

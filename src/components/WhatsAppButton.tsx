@@ -54,7 +54,7 @@ export default function WhatsAppButton({
         <WhatsAppIcon size={22} />
       </span>
       <span>
-        <span className="block text-sm font-semibold text-white">Chat on WhatsApp</span>
+        <span className="block text-sm font-semibold text-ink">Chat on WhatsApp</span>
         <span className="block text-xs text-muted">
           {settings.contactPhone} · Usually replies within minutes
         </span>

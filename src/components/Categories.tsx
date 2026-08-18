@@ -51,7 +51,7 @@ export default function Categories() {
           WHAT I DO
           <span aria-hidden className="h-px w-5 bg-gradient-to-l from-transparent to-gold" />
         </p>
-        <h2 className="mt-3 font-display text-3xl font-semibold text-white sm:text-4xl">
+        <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
           My Categories
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted">

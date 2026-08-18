@@ -73,7 +73,7 @@ export default function WebDesignTrustBar() {
               </svg>
             </span>
             <div>
-              <p className="text-xs font-semibold text-white">{b.title}</p>
+              <p className="text-xs font-semibold text-ink">{b.title}</p>
               <p className="text-[11px] text-muted">{b.desc}</p>
             </div>
           </div>

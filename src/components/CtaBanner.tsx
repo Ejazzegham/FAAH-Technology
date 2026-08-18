@@ -66,7 +66,7 @@ export default function CtaBanner({
     <div className="section pt-0">
       <div
         className="rgb-box relative flex flex-col items-center justify-between gap-6 overflow-hidden rounded-xl px-8 py-10 sm:flex-row"
-        style={{ ["--box-fill" as string]: "#0a0a0d" }}
+        style={{ ["--box-fill" as string]: "#ffffff" }}
       >
         <div
           aria-hidden
@@ -79,7 +79,7 @@ export default function CtaBanner({
         <div className="relative flex items-center gap-4 text-center sm:text-left">
           <Icon icon={icon} />
           <div>
-            <h3 className="font-display text-xl font-semibold text-white sm:text-2xl">
+            <h3 className="font-display text-xl font-semibold text-ink sm:text-2xl">
               {title}
             </h3>
             <p className="mt-1 text-sm text-muted">{subtitle}</p>

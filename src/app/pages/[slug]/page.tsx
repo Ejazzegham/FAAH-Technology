@@ -27,7 +27,7 @@ export default async function CustomPage({ params }: { params: { slug: string } 
       <Navbar />
       <main>
         <section className="section max-w-3xl">
-          <h1 className="font-display text-3xl font-semibold text-white sm:text-4xl">
+          <h1 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
             {page.title}
           </h1>
           <span aria-hidden className="mt-4 block h-px w-10 bg-gold" />

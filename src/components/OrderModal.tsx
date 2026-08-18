@@ -12,7 +12,7 @@ import { ensureCustomerProfile } from "@/lib/firestore/customers";
 import { submitOrder } from "@/lib/firestore/orders";
 
 const inputClass =
-  "w-full rounded-md border border-line bg-bg px-3 py-2.5 text-sm text-white placeholder:text-muted focus:border-gold focus:outline-none";
+  "w-full rounded-md border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-muted focus:border-gold focus:outline-none";
 
 export default function OrderModal({
   categoryLabel,
@@ -103,11 +103,11 @@ export default function OrderModal({
         <div className="flex items-start justify-between">
           <div>
             <p className="text-xs font-semibold tracking-wide text-gold">{categoryLabel}</p>
-            <h2 className="mt-1 font-display text-lg font-semibold text-white">
+            <h2 className="mt-1 font-display text-lg font-semibold text-ink">
               Order — {tierName} <span className="text-muted">({price})</span>
             </h2>
           </div>
-          <button onClick={onClose} aria-label="Close" className="text-muted hover:text-white">
+          <button onClick={onClose} aria-label="Close" className="text-muted hover:text-ink">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
               <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
             </svg>
@@ -179,7 +179,7 @@ export default function OrderModal({
         ) : (
           <form onSubmit={handleOrderSubmit} className="mt-5 space-y-3">
             <p className="text-xs text-muted">
-              Signed in as <span className="text-white">{user.email}</span>
+              Signed in as <span className="text-ink">{user.email}</span>
             </p>
             <textarea
               required
