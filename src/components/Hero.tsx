@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const CHECKLIST = [
   "Creative & Modern UI/UX Design",
-  "Responsive Websites & Web Applications",
-  "Mobile Apps & Custom Software",
+  "Responsive Web & Mobile Apps",
   "Clean, Secure & Scalable Code",
 ];
 
@@ -50,10 +49,8 @@ export default function Hero() {
           </p>
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/60 lg:mx-0">
-            We help businesses, startups, and brands grow with creative
-            design, modern websites, powerful mobile apps, and custom
-            software solutions. Our focus is on delivering innovative
-            digital experiences that drive real business results.
+            We help businesses grow with creative design, modern websites,
+            and powerful custom software solutions.
           </p>
 
           <ul className="mx-auto mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-3 lg:mx-0 lg:justify-start">

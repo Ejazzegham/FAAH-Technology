@@ -1,22 +1,29 @@
 import Image from "next/image";
 
 const CHECKLIST = [
-  "Creative & Modern Digital Solutions",
-  "Clean, Secure & High-Performance Code",
-  "On-Time Delivery & Reliable Support",
-  "Customer-Focused Innovation",
+  "10+ Years Combined Experience",
+  "Client-First Philosophy",
+  "Transparent & Honest Process",
 ];
 
 export default function AboutHero() {
   return (
-    <section className="relative overflow-hidden">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/4 translate-x-1/4 rounded-full bg-gold/10 blur-3xl"
-      />
+    <section className="relative flex min-h-[480px] items-center overflow-hidden lg:min-h-[600px]">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/about/hero-glow.png"
+          alt="Glowing digital globe over a city skyline with People, Mission, Vision, Values, and Trust icons, representing the FAAH Technology team and values"
+          fill
+          className="object-cover object-[75%_center] lg:object-[65%_center]"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#04060f] via-[#04060f]/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#04060f] via-transparent to-transparent" />
+      </div>
 
-      <div className="section grid items-center gap-12 pb-10 pt-8 lg:grid-cols-[1.05fr_1fr] lg:gap-10 lg:pt-12">
-        <div className="text-center lg:text-left">
+      <div className="section relative w-full">
+        <div className="max-w-xl text-center lg:text-left">
           <p className="flex items-center justify-center gap-3 text-xs font-semibold tracking-[0.25em] text-gold lg:justify-start">
             <span aria-hidden className="h-px w-5 bg-gradient-to-r from-transparent to-gold" />
             ABOUT US
@@ -24,26 +31,23 @@ export default function AboutHero() {
           </p>
 
           <h1 className="mx-auto mt-4 max-w-xl font-display text-3xl font-semibold leading-[1.15] sm:text-4xl lg:mx-0 lg:text-5xl">
-            <span className="text-ink">Creative Minds.</span>
+            <span className="text-white">The Team Behind</span>
             <br />
-            <span className="text-gold tracking-tight">Powerful Solutions. Trusted Results.</span>
+            <span className="text-gold tracking-tight">Your Success</span>
           </h1>
 
-          <p className="mx-auto mt-5 max-w-xl text-sm font-semibold tracking-wide text-ink/80 sm:text-base lg:mx-0">
-            Building Innovative Digital Experiences That Empower Businesses
+          <p className="mx-auto mt-5 max-w-xl text-sm font-semibold tracking-wide text-white/80 sm:text-base lg:mx-0">
+            Passionate People. Purposeful Work.
           </p>
 
-          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted lg:mx-0">
-            At FAAH Technology, we transform ideas into powerful digital
-            experiences. From creative branding and modern websites to
-            mobile applications and custom software, we deliver innovative
-            solutions that help businesses grow, connect with customers,
-            and achieve lasting success.
+          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/60 lg:mx-0">
+            We&apos;re a team of designers, developers, and strategists
+            dedicated to building digital experiences that drive real results.
           </p>
 
           <ul className="mx-auto mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-3 lg:mx-0 lg:justify-start">
             {CHECKLIST.map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-ink/90">
+              <li key={item} className="flex items-center gap-2 text-sm text-white/90">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="shrink-0 text-gold">
                   <circle cx="12" cy="12" r="10" fill="currentColor" fillOpacity="0.15" />
                   <path
@@ -58,17 +62,6 @@ export default function AboutHero() {
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="rgb-box relative mx-auto aspect-[16/9] w-full max-w-xl overflow-hidden rounded-2xl">
-          <Image
-            src="/about/hero.png"
-            alt="FAAH Technology team collaborating around a laptop, surrounded by icons for graphic design, UI/UX design, web development, mobile app development, and custom solutions"
-            fill
-            className="object-cover"
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            priority
-          />
         </div>
       </div>
     </section>

@@ -3,7 +3,6 @@ import Image from "next/image";
 const CHECKLIST = [
   "Transparent & Fair Pricing",
   "Flexible Packages for Every Business",
-  "Premium Quality & Reliable Support",
   "No Hidden Fees or Unexpected Costs",
 ];
 
@@ -50,10 +49,8 @@ export default function PricingHero() {
           </p>
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/60 lg:mx-0">
-            Whether you&apos;re a startup, growing business, or established
-            enterprise, we offer flexible pricing tailored to your needs.
-            Choose the services that fit your goals and budget, with clear
-            pricing, exceptional quality, and no hidden costs.
+            Choose flexible pricing tailored to your business, with clear
+            costs and premium quality every step of the way.
           </p>
 
           <ul className="mx-auto mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-3 lg:mx-0 lg:justify-start">

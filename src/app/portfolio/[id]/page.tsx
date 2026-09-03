@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProjectGallery from "@/components/ProjectGallery";
 import ProjectReactions from "@/components/ProjectReactions";
-import Lightfall from "@/components/Lightfall";
 import { CATEGORY_LABELS, getProjectById } from "@/lib/projects";
 
 export async function generateMetadata({
@@ -37,25 +36,6 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
       <Navbar />
       <main>
         <section className="relative overflow-hidden">
-          <div aria-hidden className="pointer-events-none absolute inset-0 opacity-40">
-            <Lightfall
-              colors={["#A6C8FF", "#5227FF", "#FF9FFC"]}
-              backgroundColor="#0A29FF"
-              speed={0.5}
-              streakCount={2}
-              streakWidth={1}
-              streakLength={1}
-              glow={1}
-              density={0.6}
-              twinkle={1}
-              zoom={3}
-              backgroundGlow={0.5}
-              opacity={1}
-              mouseInteraction
-              mouseStrength={0.5}
-              mouseRadius={1}
-            />
-          </div>
           <div
             aria-hidden
             className="pointer-events-none absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/4 translate-x-1/4 rounded-full bg-gold/10 blur-3xl"
